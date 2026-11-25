@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "description": "WorkCtl Tool Registry - External application execution and control backends",
+  "tools": {
+    "vlc": {
+      "id": "vlc",
+      "label": "VLC Media Player",
+      "category": "media",
+      "kind": "player",
+      "installType": "native-binary",
+      "installPath": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+      "workingDirectory": "C:\\Program Files\\VideoLAN\\VLC",
+      "processNames": ["vlc"],
+      "serviceName": null,
+      "defaultPort": null,
+      "webUrl": null,
+      "capabilities": [
+        "play",
+        "enqueue",
+        "open-file",
+        "open-folder"
+      ],
+      "adapter": "VLC",
+      "stopPolicy": "manual",
+      "managed": false
+    },
+    "sonarr": {
+      "id": "sonarr",
+      "label": "Sonarr TV Automation",
+      "category": "media",
+      "kind": "automation",
+      "installType": "portable-archive",
+      "installPath": "C:\\ProgramData\\Sonarr\\bin\\Sonarr.exe",
+      "consolePath": "C:\\ProgramData\\Sonarr\\bin\\Sonarr.Console.exe",
+      "dataPath": "C:\\ProgramData\\Sonarr",
+      "workingDirectory": "C:\\ProgramData\\Sonarr\\bin",
+      "processNames": ["Sonarr", "Sonarr.Console"],
+      "serviceName": null,
+      "defaultPort": 8989,
+      "webUrl": "http://localhost:8989",
+      "capabilities": [
+        "status",
+        "health",
+        "library",
+        "queue",
+        "missing",
+        "history",
+        "diskspace",
+        "open-ui"
+      ],
+      "adapter": "Sonarr",
+      "stopPolicy": "manual",
+      "managed": true
+    },
+    "torlink": {
+      "id": "torlink",
+      "label": "Torlink Torrent Downloader",
+      "category": "media",
+      "kind": "download-tool",
+      "installType": "node-cli",
+      "installPath": "E:\\Workspace\\Tools\\torlink",
+      "entryPoint": "dist\\cli.cjs",
+      "daemonEntryPoint": "dist\\index.js",
+      "workingDirectory": "E:\\Workspace\\Tools\\torlink",
+      "processNames": ["node"],
+      "commandLinePattern": "*torl*",
+      "serviceName": null,
+      "defaultPort": 9161,
+      "defaultDownloadDir": "E:\\TorlinkDownloads",
+      "capabilities": [
+        "status",
+        "downloads",
+        "history",
+        "open",
+        "launch",
+        "serve"
+      ],
+      "adapter": "Torlink",
+      "stopPolicy": "manual",
+      "managed": true
+    },
+    "ffprobe": {
+      "id": "ffprobe",
+      "label": "FFprobe Media Metadata Engine",
+      "category": "media",
+      "kind": "metadata-backend",
+      "installType": "bundled-binary",
+      "installPath": "C:\\ProgramData\\Sonarr\\bin\\ffprobe.exe",
+      "workingDirectory": "C:\\ProgramData\\Sonarr\\bin",
+      "processNames": ["ffprobe"],
+      "serviceName": null,
+      "defaultPort": null,
+      "webUrl": null,
+      "capabilities": [
+        "probe-streams",
+        "probe-format",
+        "extract-codecs",
+        "extract-duration",
+        "extract-subtitles"
+      ],
+      "adapter": "FFprobe",
+      "stopPolicy": "manual",
+      "managed": false
+    },
+    "freebuff": {
+      "id": "freebuff",
+      "label": "Freebuff AI Coding Agent",
+      "category": "ai",
+      "kind": "interactive-cli",
+      "installType": "npm-global",
+      "installPath": "C:\\Program Files\\nodejs\\freebuff.ps1",
+      "command": "freebuff",
+      "workingDirectory": "E:\\Workspace",
+      "processNames": ["freebuff"],
+      "capabilities": [
+        "terminal-agent",
+        "file-context",
+        "code-editing",
+        "tool-execution",
+        "web-research",
+        "browser-use",
+        "history"
+      ],
+      "adapter": "Freebuff",
+      "stopPolicy": "manual",
+      "managed": false,
+      "launchType": "interactive-cli",
+      "description": "Free, ad-supported multi-agent AI coding assistant for the terminal"
+    },
+    "windirstat": {
+      "id": "windirstat",
+      "label": "WinDirStat Disk Usage Analyzer",
+      "category": "storage",
+      "kind": "gui-utility",
+      "installType": "native-binary",
+      "installPath": "E:\\TOOLS\\Diagnostics\\WinDirStat.exe",
+      "workingDirectory": "E:\\TOOLS\\Diagnostics",
+      "processNames": ["WinDirStat"],
+      "capabilities": [
+        "disk-usage",
+        "visual-treemap",
+        "cleanup"
+      ],
+      "adapter": "Generic",
+      "stopPolicy": "manual",
+      "managed": false,
+      "launchType": "gui-process",
+      "description": "Disk usage statistics viewer and cleanup tool for Windows"
+    },
+    "fancontrol": {
+      "id": "fancontrol",
+      "label": "FanControl Hardware Suite",
+      "category": "system",
+      "kind": "hardware-controller",
+      "installType": "portable-archive",
+      "installPath": "E:\\TOOLS\\FanControl_267_net_10_0\\FanControl.exe",
+      "workingDirectory": "E:\\TOOLS\\FanControl_267_net_10_0",
+      "processNames": ["FanControl"],
+      "capabilities": [
+        "fan-curves",
+        "temperature-monitoring",
+        "hardware-telemetry"
+      ],
+      "adapter": "Generic",
+      "stopPolicy": "manual",
+      "managed": false,
+      "launchType": "gui-process",
+      "description": "Focused, highly customizable fan speed and sensor control software"
+    },
+    "qbittorrent": {
+      "id": "qbittorrent",
+      "label": "qBittorrent Client",
+      "category": "network",
+      "kind": "torrent-client",
+      "installType": "portable-binary",
+      "installPath": "E:\\TOOLS\\qBittorrent\\qbittorrent.exe",
+      "workingDirectory": "E:\\TOOLS\\qBittorrent",
+      "processNames": ["qbittorrent"],
+      "defaultPort": 8080,
+      "capabilities": [
+        "torrent-management",
+        "downloads",
+        "web-ui"
+      ],
+      "adapter": "Generic",
+      "stopPolicy": "manual",
+      "managed": false,
+      "launchType": "gui-process",
+      "description": "Native open-source BitTorrent client with optional Web UI"
+    },
+    "mounter": {
+      "id": "mounter",
+      "label": "WinCDEmu Virtual Drive Mounter",
+      "category": "storage",
+      "kind": "disk-utility",
+      "installType": "native-binary",
+      "installPath": "E:\\TOOLS\\Mounter\\batchmnt64.exe",
+      "workingDirectory": "E:\\TOOLS\\Mounter",
+      "processNames": ["batchmnt64", "vmnt64"],
+      "capabilities": [
+        "iso-mount",
+        "virtual-drive",
+        "unmount"
+      ],
+      "adapter": "Generic",
+      "stopPolicy": "manual",
+      "managed": false,
+      "launchType": "cli-tool",
+      "description": "Lightweight CD/DVD/BD/ISO virtual image mounting engine"
+    }
+  }
+}

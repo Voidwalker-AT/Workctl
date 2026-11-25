@@ -1,0 +1,255 @@
+﻿{
+    "Timestamp":  "2026-09-15T11:00:55.8969543+05:30",
+    "Phase":  "WCTL-3-FINAL",
+    "Environment":  "Windows PowerShell 5.1 / Windows 11",
+    "Screens":  [
+                    {
+                        "Screen":  "shell-home",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  62.66,
+                        "P95Ms":  97.71,
+                        "MaxMs":  391.54,
+                        "FrameBuildMedianMs":  61.24,
+                        "DiffMedianMs":  0.48,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-home",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  51.25,
+                        "P95Ms":  64.31,
+                        "MaxMs":  72.5,
+                        "FrameBuildMedianMs":  49.79,
+                        "DiffMedianMs":  0.47,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-tools-list",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  46.74,
+                        "P95Ms":  101.05,
+                        "MaxMs":  136.63,
+                        "FrameBuildMedianMs":  45.26,
+                        "DiffMedianMs":  0.44,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-tools-list",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  52.76,
+                        "P95Ms":  73.22,
+                        "MaxMs":  86.33,
+                        "FrameBuildMedianMs":  51.17,
+                        "DiffMedianMs":  0.4,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-workloads-list",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  1746.33,
+                        "P95Ms":  1859.15,
+                        "MaxMs":  1921.73,
+                        "FrameBuildMedianMs":  1744.82,
+                        "DiffMedianMs":  0.44,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-workloads-list",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  1773.12,
+                        "P95Ms":  1874.71,
+                        "MaxMs":  1892.88,
+                        "FrameBuildMedianMs":  1771.65,
+                        "DiffMedianMs":  0.43,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-storage",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  47.14,
+                        "P95Ms":  66.72,
+                        "MaxMs":  68.76,
+                        "FrameBuildMedianMs":  45.31,
+                        "DiffMedianMs":  0.42,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-storage",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  48.21,
+                        "P95Ms":  68.12,
+                        "MaxMs":  83.17,
+                        "FrameBuildMedianMs":  46.9,
+                        "DiffMedianMs":  0.39,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-hardware",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  36.23,
+                        "P95Ms":  50.3,
+                        "MaxMs":  88.54,
+                        "FrameBuildMedianMs":  35.22,
+                        "DiffMedianMs":  0.41,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-hardware",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  35.55,
+                        "P95Ms":  48.75,
+                        "MaxMs":  75.23,
+                        "FrameBuildMedianMs":  34.51,
+                        "DiffMedianMs":  0.39,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-services",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  69.26,
+                        "P95Ms":  105.56,
+                        "MaxMs":  130.91,
+                        "FrameBuildMedianMs":  67.75,
+                        "DiffMedianMs":  0.43,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-services",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  68.42,
+                        "P95Ms":  103.46,
+                        "MaxMs":  116.51,
+                        "FrameBuildMedianMs":  67.08,
+                        "DiffMedianMs":  0.41,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-processes",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  93.35,
+                        "P95Ms":  117.93,
+                        "MaxMs":  205.15,
+                        "FrameBuildMedianMs":  91.8,
+                        "DiffMedianMs":  0.49,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-processes",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  72.4,
+                        "P95Ms":  118.71,
+                        "MaxMs":  150.31,
+                        "FrameBuildMedianMs":  71.33,
+                        "DiffMedianMs":  0.38,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-dev-menu",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  239.81,
+                        "P95Ms":  286.88,
+                        "MaxMs":  303.81,
+                        "FrameBuildMedianMs":  238.19,
+                        "DiffMedianMs":  0.45,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-dev-menu",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  248.75,
+                        "P95Ms":  297.69,
+                        "MaxMs":  303.52,
+                        "FrameBuildMedianMs":  245.51,
+                        "DiffMedianMs":  0.51,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-projects",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  36.56,
+                        "P95Ms":  53.62,
+                        "MaxMs":  100.65,
+                        "FrameBuildMedianMs":  35.09,
+                        "DiffMedianMs":  0.41,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-projects",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  40.55,
+                        "P95Ms":  72.51,
+                        "MaxMs":  89.11,
+                        "FrameBuildMedianMs":  39.17,
+                        "DiffMedianMs":  0.41,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-guide",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  70.34,
+                        "P95Ms":  98.67,
+                        "MaxMs":  117.41,
+                        "FrameBuildMedianMs":  69.19,
+                        "DiffMedianMs":  0.44,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-guide",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  68.72,
+                        "P95Ms":  92.43,
+                        "MaxMs":  104.22,
+                        "FrameBuildMedianMs":  66.69,
+                        "DiffMedianMs":  0.42,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-search",
+                        "Pattern":  "down",
+                        "Iterations":  50,
+                        "MedianMs":  59.5,
+                        "P95Ms":  82.36,
+                        "MaxMs":  106.75,
+                        "FrameBuildMedianMs":  57.54,
+                        "DiffMedianMs":  0.41,
+                        "AvgChangedRows":  0
+                    },
+                    {
+                        "Screen":  "shell-search",
+                        "Pattern":  "alternate",
+                        "Iterations":  50,
+                        "MedianMs":  60.93,
+                        "P95Ms":  79.2,
+                        "MaxMs":  88.89,
+                        "FrameBuildMedianMs":  59.57,
+                        "DiffMedianMs":  0.38,
+                        "AvgChangedRows":  0
+                    }
+                ],
+    "IdleBenchmark":  {
+                          "DurationSeconds":  10,
+                          "TerminalWritesPerSec":  0,
+                          "StartingRamMB":  183.2,
+                          "EndingRamMB":  181.5
+                      }
+}

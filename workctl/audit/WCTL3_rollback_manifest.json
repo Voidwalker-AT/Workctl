@@ -1,0 +1,18 @@
+﻿{
+    "timestamp":  "2026-09-15T01:28:41.1324611+05:30",
+    "backupSnapshotPath":  "E:\\TOOLS\\WorkstationControl\\backups\\pre_wctl3_2026-09-15_01-28-40",
+    "preWctl3Manifest":  {
+                             "workctl.ps1":  "9FB8E8F527565A5746BAC0AA2DF60C0E7C6C03ABEEB7BDBCFCEE7384DE555A62",
+                             "modules\\ui.ps1":  "E1DFEEE3FC23DDE25295C3DC2CF38F4E45E2B605448FA25B9CB23E166956324C",
+                             "modules\\shell.ps1":  "DF3038186064A0AF921E7917F34456D6B711E0B4CB4FA27E6D642D605FB9D896",
+                             "modules\\guide.ps1":  "8FBB125B8D196FB5D44ABD6446B85876A3A7B1E9B4C8185D39E7F7ACC9D77FEF",
+                             "modules\\tools.ps1":  "03DFD2EC841AB0E384591372EAFB161C00446B6C7D7D232B288AED2493205D72",
+                             "modules\\workloads.ps1":  "3EEE289ED493EB084A3368D4D6C4B806D71C9E4F68D0E3C0400A7C9BC6A6FCF6",
+                             "modules\\resources.ps1":  "0E23EEB1776E300CC74DB9622F6D3AD0410BBABF22CEBF2952D7B1ED53645C55",
+                             "modules\\powertoys.ps1":  "1E5855E74E15CDEDA194C5AD728EDC63B462D04F58FE9B3497BC9E2DD2A5877A",
+                             "modules\\media.ps1":  "4F52FF7E92D48EE8CCE8F5DEF741508AFF6C7B212C3307CD40C9FCA094428C12",
+                             "modules\\development.ps1":  "700EEFEDDAD2634EC396FDB04FF72ADC5156D7FE3DF54767B38325E04CA9FBE1",
+                             "config\\tools.json":  "E03DE73F65699BBB1C56B622951D17BA72B7D085B0B3BC2807C6475A68D15646",
+                             "config\\workloads.json":  "92B56320F631CF68BD72F2A1654F8B101E92484EFF169BAA343D40870AE7B4C8"
+                         }
+}

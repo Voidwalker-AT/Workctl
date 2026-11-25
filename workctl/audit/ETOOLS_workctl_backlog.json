@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-09-15T00:19:00+05:30",
+  "candidates": [
+    {
+      "id": "workstationcontrol",
+      "name": "WorkstationControl",
+      "path": "E:\\TOOLS\\WorkstationControl",
+      "classification": "ALREADY_MANAGED",
+      "action": "Active primary workstation control plane; protected from termination."
+    },
+    {
+      "id": "freebuff",
+      "name": "Freebuff AI Coding Agent",
+      "path": "C:\\Program Files\\nodejs\\freebuff.ps1",
+      "classification": "MANAGE_AS_ON_DEMAND_TOOL",
+      "action": "Integrated via Invoke-WorkCtlInteractiveTool with subprocess terminal handoff."
+    },
+    {
+      "id": "windirstat",
+      "name": "WinDirStat Disk Usage Analyzer",
+      "path": "E:\\TOOLS\\Diagnostics\\WinDirStat.exe",
+      "classification": "MANAGE_AS_ON_DEMAND_TOOL",
+      "action": "Integrated into Tools registry for direct GUI launch."
+    },
+    {
+      "id": "fancontrol",
+      "name": "FanControl Hardware Suite",
+      "path": "E:\\TOOLS\\FanControl_267_net_10_0\\FanControl.exe",
+      "classification": "MANAGE_AS_ON_DEMAND_TOOL",
+      "action": "Integrated into Tools registry for direct GUI launch with admin elevation."
+    },
+    {
+      "id": "mounter",
+      "name": "WinCDEmu Virtual Drive Mounter",
+      "path": "E:\\TOOLS\\Mounter\\batchmnt64.exe",
+      "classification": "MANAGE_AS_ON_DEMAND_TOOL",
+      "action": "Integrated into Tools registry for ISO mounting."
+    },
+    {
+      "id": "qbittorrent",
+      "name": "qBittorrent Client",
+      "path": "E:\\TOOLS\\qBittorrent\\qbittorrent.exe",
+      "classification": "MANAGE_AS_SERVICE",
+      "action": "Integrated as on-demand tool in Phase WCTL-2; candidate for managed background WebUI service on port 8080 in subsequent phase."
+    },
+    {
+      "id": "installers",
+      "name": "Installers Holding Directory",
+      "path": "E:\\TOOLS\\Installers",
+      "classification": "REFERENCE_ONLY",
+      "action": "Retain as repository for downloaded package installers; no active integration needed."
+    },
+    {
+      "id": "omencore",
+      "name": "OmenCore Hardware Layer",
+      "path": "E:\\Workspace\\Tools\\OmenCore",
+      "classification": "NEEDS_REVIEW",
+      "action": "Evaluate in subsequent phase for hardware telemetry integration into resources subsystem."
+    },
+    {
+      "id": "camofox",
+      "name": "Camofox Anti-Detect Browser",
+      "path": "E:\\Workspace\\Tools\\camofox-browser",
+      "classification": "NEEDS_REVIEW",
+      "action": "Evaluate in subsequent phase for browser automation integration."
+    },
+    {
+      "id": "pinchtab",
+      "name": "PinchTab Tab Management",
+      "path": "E:\\Workspace\\Tools\\pinchtab",
+      "classification": "NEEDS_REVIEW",
+      "action": "Evaluate in subsequent phase for browser session control."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+﻿{
+    "Timestamp":  "2026-09-15 16:37:24",
+    "TestsRun":  11,
+    "TestsPassed":  11,
+    "TestsFailed":  0,
+    "Results":  [
+                    {
+                        "Test":  "Canonical state created by New-WorkCtlShellState satisfies contract",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "State missing LastAction fails contract validation",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "State with invalid index type fails contract validation",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Confirm-WorkCtlShellState augments legacy/reduced state idempotently",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Every property written on $state in shell.ps1 and guide.ps1 is declared in canonical schema",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Event loop handles Home navigation (Down, Up, PageDown, PageUp, Home, End) without error",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Event loop handles Tools navigation (Down, Up, Details) without error",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Event loop handles Workloads navigation (Down, Up, Filter) without error",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Event loop handles Processes navigation (Down, Up, PageDown) without error",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Event loop handles Guide navigation without error",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Error recovery screen renders FailingScreen and LastAction with proper spacing",
+                        "Status":  "PASS",
+                        "Error":  null
+                    }
+                ]
+}

@@ -1,0 +1,15 @@
+﻿{
+    "TestRepository":  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\523a4d14-82c1-4109-aab5-9a46cbcd20a2\\scratch\\disposable_test_repo",
+    "CommandExecuted":  "freebuff --version",
+    "ExitCode":  0,
+    "VersionOutput":  "0.0.174",
+    "StderrOutput":  "",
+    "StartupLatencyMs":  1477,
+    "ResidentProcessesCount":  0,
+    "ResidentProcesses":  [
+
+                          ],
+    "DefaultModel":  "glm-5.3-flash-2026-09-05",
+    "ExecutionMode":  "Interactive-Only (Requires TTY terminal session; no headless CLI argument)",
+    "OnboardingBoundaryReached":  "Freebuff CLI requires interactive terminal allocation via Invoke-WorkCtlInteractiveTool"
+}

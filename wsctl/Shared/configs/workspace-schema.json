@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkspaceManifest",
+  "type": "object",
+  "required": ["schemaVersion", "workspace", "projects"],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "generated": {
+      "type": "string"
+    },
+    "workspace": {
+      "type": "object",
+      "required": ["name", "root", "sharedPath"],
+      "properties": {
+        "name": { "type": "string" },
+        "root": { "type": "string" },
+        "canonicalDrive": { "type": "string" },
+        "sharedPath": { "type": "string" },
+        "docsPath": { "type": "string" },
+        "modelsPath": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "path", "category", "status", "languages", "packageManager", "environment"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "path": { "type": "string" },
+          "category": { "type": "string", "enum": ["active", "academic", "tools", "references", "experiments", "completed", "shared"] },
+          "status": { "type": "string", "enum": ["active", "production", "completed", "archived", "reference"] },
+          "languages": { "type": "array", "items": { "type": "string" } },
+          "frameworks": { "type": "array", "items": { "type": "string" } },
+          "packageManager": { "type": "string" },
+          "environment": { "type": "string" },
+          "gpu": { "type": "string", "enum": ["required", "optional", "none"] },
+          "git": { "type": "boolean" },
+          "documentation": { "type": "string" },
+          "commands": { "type": "object" },
+          "quick": { "type": "boolean" },
+          "quickSlot": { "type": "integer", "minimum": 1, "maximum": 4 },
+          "tags": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+﻿{
+    "Date":  "2026-09-15T06:07:07.9039194Z",
+    "PS51":  {
+                 "Runtime":  "PowerShell 5.1",
+                 "PSVersion":  "5.1.26100.9278",
+                 "CLRVersion":  "4.0.30319.42000",
+                 "OS":  "Microsoft Windows NT 10.0.26200.0",
+                 "TotalWallMs":  15660.27,
+                 "TotalCpuSeconds":  15.391,
+                 "MemoryAllocMB":  8.43,
+                 "Screens":  {
+                                 "shell-workloads-list":  {
+                                                              "MedianMs":  38.26,
+                                                              "P95Ms":  63.208,
+                                                              "MinMs":  20.344,
+                                                              "MaxMs":  1814.988
+                                                          },
+                                 "shell-services":  {
+                                                        "MedianMs":  30.851,
+                                                        "P95Ms":  45.271,
+                                                        "MinMs":  20.976,
+                                                        "MaxMs":  47.857
+                                                    },
+                                 "shell-home":  {
+                                                    "MedianMs":  23.624,
+                                                    "P95Ms":  35.546,
+                                                    "MinMs":  14.348,
+                                                    "MaxMs":  62.278
+                                                },
+                                 "shell-tools-list":  {
+                                                          "MedianMs":  28.62,
+                                                          "P95Ms":  41.764,
+                                                          "MinMs":  14.962,
+                                                          "MaxMs":  49.743
+                                                      }
+                             }
+             },
+    "PS7":  {
+                "Runtime":  "PowerShell 7.6.5",
+                "PSVersion":  "7.6.5",
+                "CLRVersion":  "CoreCLR",
+                "OS":  "Microsoft Windows NT 10.0.26200.0",
+                "TotalWallMs":  17383.88,
+                "TotalCpuSeconds":  29.016,
+                "MemoryAllocMB":  5.44,
+                "Screens":  {
+                                "shell-services":  {
+                                                       "MedianMs":  27.593,
+                                                       "P95Ms":  39.504,
+                                                       "MinMs":  15.674,
+                                                       "MaxMs":  43.155
+                                                   },
+                                "shell-tools-list":  {
+                                                         "MedianMs":  27.785,
+                                                         "P95Ms":  43.757,
+                                                         "MinMs":  13.35,
+                                                         "MaxMs":  59.546
+                                                     },
+                                "shell-workloads-list":  {
+                                                             "MedianMs":  42.155,
+                                                             "P95Ms":  65.789,
+                                                             "MinMs":  18.541,
+                                                             "MaxMs":  2016.944
+                                                         },
+                                "shell-home":  {
+                                                   "MedianMs":  34.635,
+                                                   "P95Ms":  48.892,
+                                                   "MinMs":  18.956,
+                                                   "MaxMs":  56.528
+                                               }
+                            }
+            }
+}

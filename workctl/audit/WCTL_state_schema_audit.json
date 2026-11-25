@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkCtl Shell AppState Canonical Schema",
+  "version": "1.5.1",
+  "properties": {
+    "Screen": {
+      "type": "string",
+      "default": "shell-home",
+      "description": "Active cockpit screen identifier"
+    },
+    "PreviousScreen": {
+      "type": "string",
+      "default": "shell-home",
+      "description": "Previous screen for Esc / Back navigation"
+    },
+    "FailingScreen": {
+      "type": "string",
+      "default": "",
+      "description": "Screen where the most recent runtime fault occurred"
+    },
+    "Running": {
+      "type": "boolean",
+      "default": true,
+      "description": "Lifecycle flag controlling event loop execution"
+    },
+    "Dirty": {
+      "type": "boolean",
+      "default": true,
+      "description": "Differential render trigger flag"
+    },
+    "Context": {
+      "type": "string",
+      "default": "home",
+      "description": "Cockpit context identifier for command prompt and completions"
+    },
+    "LastAction": {
+      "type": "string",
+      "default": "None",
+      "description": "Name of the most recently processed interactive key or action"
+    },
+    "CurrentDirectory": {
+      "type": "string",
+      "default": "E:\\Workspace",
+      "description": "Active working directory for shell commands and project operations"
+    },
+    "SelectedHomeItem": {
+      "type": "integer",
+      "default": 0,
+      "description": "Zero-based index of selected item on Home screen"
+    },
+    "SelectedWorkloadIndex": {
+      "type": "integer",
+      "default": 0,
+      "description": "Zero-based index of selected item in Workloads list"
+    },
+    "SelectedWorkload": {
+      "type": "string",
+      "default": "",
+      "description": "Key of selected workload"
+    },
+    "WorkloadScroll": {
+      "type": "integer",
+      "default": 0,
+      "description": "Scroll offset for Workloads list"
+    },
+    "WorkloadFilter": {
+      "type": "string",
+      "default": "ALL",
+      "description": "Active filter for Workloads list"
+    },
+    "SelectedWorkloadCategory": {
+      "type": "string",
+      "default": "ALL",
+      "description": "Selected category filter in Workloads view"
+    },
+    "SelectedToolIndex": {
+      "type": "integer",
+      "default": 0,
+      "description": "Zero-based index of selected item in Tools list"
+    },
+    "SelectedTool": {
+      "type": "string",
+      "default": "",
+      "description": "Key of selected tool"
+    },
+    "ToolScroll": {
+      "type": "integer",
+      "default": 0,
+      "description": "Scroll offset for Tools list"
+    },
+    "ToolFilter": {
+      "type": "string",
+      "default": "ALL",
+      "description": "Active filter for Tools list"
+    },
+    "SelectedProcessIndex": {
+      "type": "integer",
+      "default": 0,
+      "description": "Zero-based index of selected process in Processes list"
+    },
+    "SelectedProcess": {
+      "type": "string",
+      "default": "",
+      "description": "PID or identifier of selected process"
+    },
+    "ProcessScroll": {
+      "type": "integer",
+      "default": 0,
+      "description": "Scroll offset for Processes list"
+    },
+    "SelectedProjectIndex": {
+      "type": "integer",
+      "default": 0,
+      "description": "Zero-based index of selected project in Projects list"
+    },
+    "SelectedProject": {
+      "type": "string",
+      "default": "",
+      "description": "Name or path of selected project"
+    },
+    "ProjectScroll": {
+      "type": "integer",
+      "default": 0,
+      "description": "Scroll offset for Projects list"
+    },
+    "SearchQuery": {
+      "type": "string",
+      "default": "",
+      "description": "Active universal search query string"
+    },
+    "SelectedSearchIndex": {
+      "type": "integer",
+      "default": 0,
+      "description": "Zero-based index of selected search result"
+    },
+    "SearchScroll": {
+      "type": "integer",
+      "default": 0,
+      "description": "Scroll offset for search results"
+    },
+    "PreSearchScreen": {
+      "type": "string",
+      "default": "shell-home",
+      "description": "Screen to return to if search is cancelled"
+    },
+    "ConfirmState": {
+      "type": ["object", "null"],
+      "default": null,
+      "description": "State object for confirmation / protection notice modal"
+    },
+    "NotificationText": {
+      "type": "string",
+      "default": "",
+      "description": "Cockpit toast notification text"
+    },
+    "NotificationColor": {
+      "type": "string",
+      "default": "Green",
+      "description": "Console color for cockpit toast notification"
+    },
+    "NotificationUntil": {
+      "type": "string",
+      "default": "0001-01-01T00:00:00",
+      "description": "Expiration timestamp for toast notification"
+    },
+    "CachedResSnapshot": {
+      "type": ["object", "null"],
+      "default": null,
+      "description": "Latest telemetry snapshot from background worker"
+    },
+    "LastResRefresh": {
+      "type": "string",
+      "default": "0001-01-01T00:00:00",
+      "description": "Timestamp of most recent telemetry refresh"
+    },
+    "ResIntervalMs": {
+      "type": "integer",
+      "default": 1500,
+      "description": "Telemetry polling interval in milliseconds"
+    },
+    "CommandOutput": {
+      "type": ["object", "null"],
+      "default": null,
+      "description": "State object for scrollable command output screen"
+    },
+    "LastError": {
+      "type": ["object", "null"],
+      "default": null,
+      "description": "Most recent runtime error object trapped by recovery boundary"
+    },
+    "LastErrorId": {
+      "type": "string",
+      "default": "",
+      "description": "Formatted error tracking identifier (e.g. WCTL-UI-STATE-145)"
+    },
+    "GuideState": {
+      "type": ["object", "null"],
+      "default": null,
+      "description": "Subsystem-owned state object for WorkCtl Guide"
+    },
+    "DevelopmentState": {
+      "type": ["object", "null"],
+      "default": null,
+      "description": "Subsystem-owned state object for Development and Projects"
+    },
+    "ToolsState": {
+      "type": ["object", "null"],
+      "default": null,
+      "description": "Subsystem-owned state object for Tools and Discovery"
+    }
+  },
+  "required": [
+    "Screen",
+    "PreviousScreen",
+    "FailingScreen",
+    "Running",
+    "Dirty",
+    "Context",
+    "LastAction",
+    "CurrentDirectory",
+    "SelectedHomeItem",
+    "SelectedWorkloadIndex",
+    "SelectedWorkload",
+    "WorkloadScroll",
+    "WorkloadFilter",
+    "SelectedWorkloadCategory",
+    "SelectedToolIndex",
+    "SelectedTool",
+    "ToolScroll",
+    "ToolFilter",
+    "SelectedProcessIndex",
+    "SelectedProcess",
+    "ProcessScroll",
+    "SelectedProjectIndex",
+    "SelectedProject",
+    "ProjectScroll",
+    "SearchQuery",
+    "SelectedSearchIndex",
+    "SearchScroll",
+    "PreSearchScreen",
+    "ConfirmState",
+    "NotificationText",
+    "NotificationColor",
+    "NotificationUntil",
+    "CachedResSnapshot",
+    "LastResRefresh",
+    "ResIntervalMs",
+    "CommandOutput",
+    "LastError",
+    "LastErrorId",
+    "GuideState",
+    "DevelopmentState",
+    "ToolsState"
+  ]
+}

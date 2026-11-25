@@ -1,0 +1,75 @@
+﻿{
+    "Timestamp":  "2026-09-15T17:14:03.2627195+05:30",
+    "Phase":  "WCTL-3.2",
+    "Environment":  "Windows PowerShell 5.1 / Windows Terminal",
+    "TotalTests":  13,
+    "PassedTests":  13,
+    "FailedTests":  0,
+    "Results":  [
+                    {
+                        "Test":  "Canonical state satisfies Test-WorkCtlShellState with 0 missing properties",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "SelectedAgentIndex regression is prevented (declared in schema with default 0)",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Navigation-stack push and pop strictly satisfies canonical contract",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Navigation entry schema audit: restorable fields strictly within navigation contract",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Real-loop fast-path hit rate \u003e= 95% on Home selection navigation",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Input coalescing processes multiple inputs before painting",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Real event-loop latency satisfies median \u003c= 8ms and p95 \u003c= 16ms",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Lazy loading Import-WorkCtlSubsystem successfully exports functions globally",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Drive discovery on Home uses high-speed .NET DriveInfo (\u003c 5ms warm average)",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "WorkCtlDesignTokens and box-drawing primitives exist and are complete",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Canonical New-WorkCtlFooter creates exactly 1 line across viewports",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Error recovery frame toggles stack trace via ShowErrorDetails",
+                        "Status":  "PASS",
+                        "Error":  null
+                    },
+                    {
+                        "Test":  "Multi-viewport layout sweep across 60, 80, 110, 150 cols renders with zero errors",
+                        "Status":  "PASS",
+                        "Error":  null
+                    }
+                ]
+}

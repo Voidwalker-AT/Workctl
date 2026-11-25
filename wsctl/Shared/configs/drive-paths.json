@@ -1,0 +1,24 @@
+{
+  "driveRoot": "E:\\",
+  "workspaceRoot": "E:\\Workspace",
+  "sharedRoot": "E:\\Workspace\\Shared",
+  "paths": {
+    "active": "E:\\Workspace\\Active",
+    "experiments": "E:\\Workspace\\Experiments",
+    "completed": "E:\\Workspace\\Completed",
+    "academic": "E:\\Workspace\\Academic",
+    "tools": "E:\\Workspace\\Tools",
+    "sharedDatasets": "E:\\Workspace\\Shared\\datasets",
+    "sharedModels": "E:\\Workspace\\Shared\\models",
+    "sharedConfigs": "E:\\Workspace\\Shared\\configs",
+    "sharedScripts": "E:\\Workspace\\Shared\\scripts",
+    "aiModels": "E:\\AI_Models",
+    "ollamaModels": "E:\\AI_Models\\OLLAMA",
+    "media": "E:\\Media",
+    "games": "E:\\Games",
+    "steamLibrary": "E:\\SteamLibrary",
+    "toolsRoot": "E:\\TOOLS",
+    "backups": "E:\\Backups",
+    "archive": "E:\\ARCHIVE"
+  }
+}

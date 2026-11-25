@@ -1,0 +1,56 @@
+﻿{
+    "Timestamp":  "2026-09-15T16:38:05.3076432+05:30",
+    "Phase":  "WCTL-2",
+    "Environment":  "Windows PowerShell 5.1 / Windows 11",
+    "OverallStatus":  "PASSED",
+    "GrandTotal":  112,
+    "GrandPassed":  112,
+    "GrandFailed":  0,
+    "Suites":  [
+                   {
+                       "Suite":  "P0 State Schema \u0026 Recovery",
+                       "Passed":  true,
+                       "TotalTests":  11,
+                       "PassedTests":  11,
+                       "FailedTests":  0,
+                       "ExitCode":  0,
+                       "DurationMs":  5919
+                   },
+                   {
+                       "Suite":  "Tools Subsystem Regression",
+                       "Passed":  true,
+                       "TotalTests":  18,
+                       "PassedTests":  18,
+                       "FailedTests":  0,
+                       "ExitCode":  0,
+                       "DurationMs":  3551
+                   },
+                   {
+                       "Suite":  "Guide Subsystem Engine",
+                       "Passed":  true,
+                       "TotalTests":  22,
+                       "PassedTests":  22,
+                       "FailedTests":  0,
+                       "ExitCode":  0,
+                       "DurationMs":  3830
+                   },
+                   {
+                       "Suite":  "Development \u0026 Freebuff Subsystem",
+                       "Passed":  true,
+                       "TotalTests":  13,
+                       "PassedTests":  13,
+                       "FailedTests":  0,
+                       "ExitCode":  0,
+                       "DurationMs":  5856
+                   },
+                   {
+                       "Suite":  "Command Mode \u0026 Multi-Viewport Sweeps",
+                       "Passed":  true,
+                       "TotalTests":  48,
+                       "PassedTests":  48,
+                       "FailedTests":  0,
+                       "ExitCode":  0,
+                       "DurationMs":  27128
+                   }
+               ]
+}

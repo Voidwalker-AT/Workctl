@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": 1,
+  "description": "Workspace dynamic path contract and external resource mapping",
+  "workspaceRoot": ".",
+  "dynamicStructure": {
+    "shared": "Shared",
+    "docs": "docs",
+    "active": "Active",
+    "academic": "Academic",
+    "tools": "Tools",
+    "references": "References",
+    "experiments": "Experiments",
+    "completed": "Completed"
+  },
+  "sharedSubpaths": {
+    "configs": "Shared/configs",
+    "scripts": "Shared/scripts",
+    "templates": "Shared/templates",
+    "envs": "Shared/envs",
+    "cache": "Shared/cache",
+    "datasets": "Shared/datasets"
+  },
+  "externalCanonicalResources": {
+    "windows": {
+      "aiModels": "E:\\AI_Models",
+      "ollamaModels": "E:\\AI_Models\\OLLAMA",
+      "huggingFaceCache": "E:\\AI_Models\\HF_CACHE",
+      "ggufModels": "E:\\AI_Models\\GGUF",
+      "uvCache": "C:\\Users\\hp\\scoop\\persist\\uv\\cache",
+      "goModCache": "C:\\Users\\hp\\go\\pkg\\mod"
+    },
+    "linuxEquivalent": {
+      "aiModels": "/mnt/ai_models",
+      "ollamaModels": "/mnt/ai_models/OLLAMA",
+      "huggingFaceCache": "/mnt/ai_models/HF_CACHE",
+      "ggufModels": "/mnt/ai_models/GGUF",
+      "uvCache": "~/.cache/uv",
+      "goModCache": "~/go/pkg/mod"
+    }
+  }
+}

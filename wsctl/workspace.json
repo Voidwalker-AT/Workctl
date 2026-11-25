@@ -1,0 +1,1819 @@
+{
+  "$schema": "./Shared/configs/workspace-schema.json",
+  "schemaVersion": 2,
+  "generated": "2026-09-22",
+  "workspace": {
+    "name": "Workspace",
+    "root": ".",
+    "canonicalDrive": "E:\\",
+    "sharedPath": "Shared",
+    "docsPath": "docs",
+    "modelsPath": "E:\\AI_Models",
+    "description": "Unified engineering, AI/ML, academic, security, automation, and tooling development platform"
+  },
+  "projects": [
+    {
+      "id": "server-nexusnode",
+      "name": "NexusNode (Server)",
+      "path": "Active/server",
+      "category": "active",
+      "status": "production",
+      "languages": [
+        "python",
+        "typescript",
+        "shell"
+      ],
+      "frameworks": [
+        "fastapi",
+        "sqlite",
+        "docker",
+        "pytest"
+      ],
+      "packageManager": "pip",
+      "environment": "system/dynamic",
+      "gpu": "optional",
+      "git": true,
+      "documentation": "Active/server/README.md",
+      "commands": {
+        "test": "pytest tests/",
+        "status": "python -c \"import sqlite3; print('NexusNode DB accessible')\""
+      },
+      "quick": true,
+      "quickSlot": 3,
+      "tags": [
+        "core",
+        "server",
+        "lms",
+        "agent-foundation"
+      ]
+    },
+    {
+      "id": "security-workbench",
+      "name": "Security Workbench",
+      "path": "Active/SecurityWorkbench",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "typescript",
+        "javascript"
+      ],
+      "frameworks": [
+        "nextjs",
+        "react",
+        "drizzle",
+        "tailwind"
+      ],
+      "packageManager": "npm",
+      "environment": "node_modules",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Active/SecurityWorkbench/README.md",
+      "commands": {
+        "build": "npm run build",
+        "test": "npm test",
+        "lint": "npm run lint"
+      },
+      "tags": [
+        "security",
+        "dashboard",
+        "fullstack",
+        "drizzle"
+      ],
+      "instructions": "Active/SecurityWorkbench/AGENTS.md"
+    },
+    {
+      "id": "aegic-nfc",
+      "name": "Aegic NFC Security Agent",
+      "path": "Active/Aegic_NFC",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "python",
+        "c"
+      ],
+      "frameworks": [
+        "pytest"
+      ],
+      "packageManager": "pip",
+      "environment": "venv",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Active/Aegic_NFC/README.md",
+      "commands": {
+        "test": "pytest tests/"
+      },
+      "tags": [
+        "security",
+        "hardware",
+        "nfc",
+        "agent"
+      ],
+      "instructions": "Active/Aegic_NFC/AGENTS.md"
+    },
+    {
+      "id": "let-us-c-model",
+      "name": "Let Us C Model Training",
+      "path": "Active/let us c-model",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "transformers",
+        "torch"
+      ],
+      "packageManager": "pip",
+      "environment": ".venv",
+      "gpu": "required",
+      "git": true,
+      "documentation": "Active/let us c-model/README.md",
+      "commands": {
+        "inspect": "python -c \"import torch; print(f'CUDA: {torch.cuda.is_available()}')\""
+      },
+      "tags": [
+        "ai",
+        "finetuning",
+        "c-code"
+      ]
+    },
+    {
+      "id": "ugm",
+      "name": "Unified Governance Model (UGM)",
+      "path": "Active/UGM",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytest"
+      ],
+      "packageManager": "pip",
+      "environment": ".venv",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Active/UGM/README.md",
+      "commands": {
+        "test": "pytest"
+      },
+      "tags": [
+        "governance",
+        "observability"
+      ]
+    },
+    {
+      "id": "dl-exp1",
+      "name": "Deep Learning Experiment 1 (MNIST MLP)",
+      "path": "Academic/sem5/DL/exp1",
+      "category": "academic",
+      "status": "completed",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "torchvision",
+        "matplotlib",
+        "tkinter"
+      ],
+      "packageManager": "pip",
+      "environment": "ULVO managed (existing compatible runtime)",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp1/README.md",
+      "commands": {
+        "train": {
+          "description": "Bounded training smoke in a new test run; full training available through main.py CLI/dashboard",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp1",
+            "--",
+            "python",
+            "-B",
+            "-u",
+            "main.py",
+            "--smoke",
+            "--epochs",
+            "1",
+            "--device",
+            "cpu"
+          ],
+          "cwd": "Academic/sem5/DL/exp1",
+          "risk": "compute"
+        },
+        "dashboard": {
+          "description": "Launch Interactive Visual Dashboard",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp1",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp1",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify model weights and evaluation metrics",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp1",
+            "--",
+            "python",
+            "-B",
+            "verify.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp1",
+          "risk": "safe"
+        }
+      },
+      "quick": true,
+      "quickSlot": 1,
+      "tags": [
+        "academic",
+        "deep-learning",
+        "pytorch",
+        "sem5",
+        "mnist"
+      ],
+      "instructions": "Academic/sem5/DL/exp1/AGENTS.md"
+    },
+    {
+      "id": "dl-exp2",
+      "name": "Deep Learning Experiment 2 (CIFAR-10 CNN)",
+      "path": "Academic/sem5/DL/exp2",
+      "category": "academic",
+      "status": "completed",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "torchvision",
+        "matplotlib",
+        "tkinter"
+      ],
+      "packageManager": "pip",
+      "environment": "ULVO managed (existing compatible runtime)",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp2/README.md",
+      "commands": {
+        "train": {
+          "description": "Bounded training smoke in a new test run; full training available through main.py CLI/dashboard",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp2",
+            "--",
+            "python",
+            "-B",
+            "-u",
+            "main.py",
+            "--preset",
+            "fast_test",
+            "--device",
+            "cpu"
+          ],
+          "cwd": "Academic/sem5/DL/exp2",
+          "risk": "compute"
+        },
+        "dashboard": {
+          "description": "Launch Interactive Visual Dashboard & CNN Inspector",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp2",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp2",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify baseline integrity, active model, and best run metrics",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp2",
+            "--",
+            "python",
+            "-B",
+            "verify.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp2",
+          "risk": "safe"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "pytorch",
+        "sem5",
+        "cifar10",
+        "cnn"
+      ],
+      "instructions": "Academic/sem5/DL/exp2/AGENTS.md"
+    },
+    {
+      "id": "dl-exp5",
+      "name": "Deep Learning Experiment 5 (Pretrained YOLO11 Object Detection & Live Identity Workbench)",
+      "path": "Academic/sem5/DL/exp5",
+      "category": "academic",
+      "status": "completed",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "ultralytics",
+        "opencv",
+        "matplotlib",
+        "tkinter"
+      ],
+      "packageManager": "pip",
+      "environment": "ULVO managed (existing compatible runtime)",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp5/README.md",
+      "commands": {
+        "dashboard": {
+          "description": "Launch Interactive 6-Tab Object Detection & Live Identity Workbench",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp5",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp5",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify environment, GPU acceleration, YOLO weights, Face models, IdentityStore, and TrackerBridge",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp5",
+            "--",
+            "python",
+            "-B",
+            "verify.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp5",
+          "risk": "safe"
+        },
+        "demo": {
+          "description": "Run CLI inference on standard benchmark sample image",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp5",
+            "--",
+            "python",
+            "main.py",
+            "samples\\bus.jpg",
+            "--conf",
+            "0.25",
+            "--iou",
+            "0.45"
+          ],
+          "cwd": "Academic/sem5/DL/exp5",
+          "risk": "safe"
+        },
+        "benchmark": {
+          "description": "Run 20-iteration latency and FPS benchmark on RTX 2050",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp5",
+            "--",
+            "python",
+            "-B",
+            "main.py",
+            "samples/bus.jpg",
+            "--benchmark",
+            "--runs",
+            "20"
+          ],
+          "cwd": "Academic/sem5/DL/exp5",
+          "risk": "safe"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "object-detection",
+        "yolo",
+        "computer-vision",
+        "face-recognition",
+        "identity",
+        "pytorch",
+        "cuda",
+        "pretrained",
+        "sem5"
+      ],
+      "instructions": "Academic/sem5/DL/exp5/AGENTS.md"
+    },
+    {
+      "id": "sem5-yolo",
+      "name": "Sem 5 YOLO Object Detection",
+      "path": "Academic/sem5/yolo",
+      "category": "academic",
+      "status": "active",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "ultralytics",
+        "opencv"
+      ],
+      "packageManager": "pip",
+      "environment": "venv",
+      "gpu": "required",
+      "git": false,
+      "documentation": "Academic/sem5/yolo/README.md",
+      "commands": {
+        "inspect": {
+          "description": "Inspect PyTorch CUDA acceleration",
+          "executable": "Scripts\\python.exe",
+          "args": [
+            "-c",
+            "\"import torch; print(f'PyTorch: {torch.__version__}, CUDA: {torch.cuda.is_available()}')\""
+          ],
+          "cwd": "Academic/sem5/yolo",
+          "risk": "safe"
+        }
+      },
+      "tags": [
+        "academic",
+        "yolo",
+        "computer-vision",
+        "sem5",
+        "cuda"
+      ]
+    },
+    {
+      "id": "sem5-crypto",
+      "name": "Sem 5 Cryptography Lab",
+      "path": "Academic/sem5/crypto",
+      "category": "academic",
+      "status": "active",
+      "languages": [
+        "python",
+        "c"
+      ],
+      "frameworks": [
+        "cryptography"
+      ],
+      "packageManager": "none",
+      "environment": "none",
+      "gpu": "none",
+      "git": false,
+      "documentation": "Academic/sem5/crypto/README.md",
+      "commands": {},
+      "tags": [
+        "academic",
+        "cryptography",
+        "sem5"
+      ]
+    },
+    {
+      "id": "sem5-research",
+      "name": "Sem 5 Academic Research",
+      "path": "Academic/sem5/research",
+      "category": "academic",
+      "status": "active",
+      "languages": [
+        "latex",
+        "python"
+      ],
+      "frameworks": [],
+      "packageManager": "none",
+      "environment": "none",
+      "gpu": "none",
+      "git": false,
+      "documentation": "Academic/sem5/research/README.md",
+      "commands": {},
+      "tags": [
+        "academic",
+        "research",
+        "papers",
+        "sem5"
+      ]
+    },
+    {
+      "id": "academic-sem4-ml",
+      "name": "Sem 4 Machine Learning Lab",
+      "path": "Academic/sem4/ml_lab",
+      "category": "academic",
+      "status": "archived",
+      "languages": [
+        "python",
+        "jupyter"
+      ],
+      "frameworks": [
+        "scikit-learn",
+        "pandas",
+        "numpy"
+      ],
+      "packageManager": "pip",
+      "environment": "none",
+      "gpu": "none",
+      "git": false,
+      "documentation": "Academic/sem4/README.md",
+      "commands": {},
+      "tags": [
+        "academic",
+        "machine-learning",
+        "sem4"
+      ]
+    },
+    {
+      "id": "academic-sem2-dsa",
+      "name": "Sem 2 Data Structures & Algorithms",
+      "path": "Academic/sem2/dsa",
+      "category": "academic",
+      "status": "archived",
+      "languages": [
+        "c",
+        "cpp"
+      ],
+      "frameworks": [],
+      "packageManager": "none",
+      "environment": "none",
+      "gpu": "none",
+      "git": false,
+      "documentation": "Academic/sem2/README.md",
+      "commands": {
+        "compile": "gcc -O2 main.c -o main.exe"
+      },
+      "tags": [
+        "academic",
+        "dsa",
+        "c",
+        "cpp",
+        "sem2"
+      ]
+    },
+    {
+      "id": "academic-leetcode",
+      "name": "Competitive Programming & LeetCode",
+      "path": "Academic/leetcode",
+      "category": "academic",
+      "status": "active",
+      "languages": [
+        "python",
+        "cpp",
+        "java"
+      ],
+      "frameworks": [],
+      "packageManager": "none",
+      "environment": "none",
+      "gpu": "none",
+      "git": false,
+      "documentation": "Academic/README.md",
+      "commands": {},
+      "tags": [
+        "algorithms",
+        "dsa",
+        "leetcode",
+        "practice"
+      ]
+    },
+    {
+      "id": "termux-ai-workstation",
+      "name": "Termux AI Workstation",
+      "path": "Active/termux-ai-workstation",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "python",
+        "shell"
+      ],
+      "frameworks": [
+        "pytorch",
+        "transformers",
+        "accelerate",
+        "pytest"
+      ],
+      "packageManager": "uv",
+      "environment": ".venv",
+      "gpu": "required",
+      "git": true,
+      "documentation": "Active/termux-ai-workstation/README.md",
+      "instructions": "Active/termux-ai-workstation/AGENTS.md",
+      "commands": {
+        "test": {
+          "description": "Run pytest test suite",
+          "executable": ".venv\\Scripts\\pytest.exe",
+          "args": [],
+          "cwd": "Active/termux-ai-workstation",
+          "risk": "safe"
+        },
+        "inspect": {
+          "description": "Inspect PyTorch CUDA acceleration",
+          "executable": ".venv\\Scripts\\python.exe",
+          "args": [
+            "-c",
+            "import torch; print(f'CUDA: {torch.cuda.is_available()}')"
+          ],
+          "cwd": "Active/termux-ai-workstation",
+          "risk": "safe"
+        }
+      },
+      "quick": true,
+      "quickSlot": 4,
+      "tags": [
+        "android",
+        "termux",
+        "ai-agent",
+        "pytorch",
+        "uv"
+      ]
+    },
+    {
+      "id": "local-ai-workflow",
+      "name": "Local AI Workflow Workstation",
+      "path": "Active/local_ai_workflow",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "typescript",
+        "javascript"
+      ],
+      "frameworks": [
+        "electron",
+        "react",
+        "tailwind"
+      ],
+      "packageManager": "npm",
+      "environment": "node_modules",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Active/local_ai_workflow/README.md",
+      "instructions": "Active/local_ai_workflow/AGENTS.md",
+      "commands": {
+        "dev": "npm run dev",
+        "build": "npm run build"
+      },
+      "tags": [
+        "desktop",
+        "electron",
+        "local-ai",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "tools-pdfcraft",
+      "name": "pdfcraft",
+      "path": "Tools/pdfcraft",
+      "category": "tools",
+      "status": "active",
+      "languages": [
+        "typescript",
+        "rust"
+      ],
+      "frameworks": [
+        "nextjs",
+        "webassembly",
+        "tauri"
+      ],
+      "packageManager": "npm",
+      "environment": "node_modules",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Tools/pdfcraft/README.md",
+      "commands": {
+        "dev": "npm run dev",
+        "build": "npm run build"
+      },
+      "tags": [
+        "tool",
+        "pdf",
+        "wasm",
+        "nextjs"
+      ]
+    },
+    {
+      "id": "tools-omniroute",
+      "name": "OmniRoute",
+      "path": "Tools/OmniRoute",
+      "category": "tools",
+      "status": "active",
+      "languages": [
+        "typescript",
+        "javascript"
+      ],
+      "frameworks": [
+        "nextjs",
+        "electron",
+        "fastify"
+      ],
+      "packageManager": "npm",
+      "environment": "node_modules",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Tools/OmniRoute/README.md",
+      "commands": {
+        "dev": "npm run dev",
+        "build": "npm run build"
+      },
+      "tags": [
+        "tool",
+        "llm-gateway",
+        "router",
+        "ai-orchestration"
+      ],
+      "instructions": "Tools/OmniRoute/AGENTS.md"
+    },
+    {
+      "id": "tools-omencore",
+      "name": "OmenCore",
+      "path": "Tools/OmenCore",
+      "category": "tools",
+      "status": "active",
+      "languages": [
+        "csharp"
+      ],
+      "frameworks": [
+        ".net",
+        "winforms",
+        "wpf"
+      ],
+      "packageManager": "nuget",
+      "environment": ".net sdk",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Tools/OmenCore/README.md",
+      "commands": {
+        "build": "dotnet build"
+      },
+      "tags": [
+        "hardware",
+        "telemetry",
+        "csharp",
+        "dotnet",
+        "omen"
+      ]
+    },
+    {
+      "id": "tools-markitdown",
+      "name": "MarkItDown Utility",
+      "path": "Tools/markitdown",
+      "category": "tools",
+      "status": "active",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "markitdown"
+      ],
+      "packageManager": "pip",
+      "environment": ".venv",
+      "gpu": "none",
+      "git": false,
+      "documentation": "Tools/README.md",
+      "commands": {
+        "run": ".venv\\Scripts\\python.exe -m markitdown"
+      },
+      "tags": [
+        "tool",
+        "cli",
+        "markdown",
+        "document-converter"
+      ]
+    },
+    {
+      "id": "tools-whichllm",
+      "name": "WhichLLM Utility",
+      "path": "Tools/whichllm",
+      "category": "tools",
+      "status": "active",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [],
+      "packageManager": "uv",
+      "environment": ".venv",
+      "gpu": "none",
+      "git": false,
+      "documentation": "Tools/README.md",
+      "commands": {
+        "run": "uv run whichllm"
+      },
+      "tags": [
+        "tool",
+        "ai",
+        "llm-selector",
+        "uv"
+      ]
+    },
+    {
+      "id": "ai-bridge",
+      "name": "AI Bridge",
+      "path": "Active/AI-Bridge",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "python",
+        "javascript",
+        "typescript"
+      ],
+      "frameworks": [
+        "fastapi",
+        "nodejs"
+      ],
+      "packageManager": "npm/pip",
+      "environment": "venv",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Active/AI-Bridge/README.md",
+      "instructions": "Active/AI-Bridge/AGENTS.md",
+      "commands": {
+        "test": "npm test"
+      },
+      "quick": true,
+      "quickSlot": 2,
+      "tags": [
+        "bridge",
+        "api",
+        "git-worktrees"
+      ]
+    },
+    {
+      "id": "vivaldi-ai",
+      "name": "Vivaldi AI Integration",
+      "path": "Active/vivaldi-ai",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "javascript",
+        "html",
+        "css",
+        "typescript"
+      ],
+      "frameworks": [
+        "webextension",
+        "nodejs"
+      ],
+      "packageManager": "npm",
+      "environment": "none",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Active/vivaldi-ai/README.md",
+      "instructions": "Active/vivaldi-ai/AGENTS.md",
+      "commands": {
+        "build": "npm --prefix orchestrator run build"
+      },
+      "tags": [
+        "browser",
+        "extension",
+        "ai",
+        "orchestrator"
+      ]
+    },
+    {
+      "id": "completed-dungeon-escape",
+      "name": "Dungeon Escape: Card Bound",
+      "path": "Completed/DungeonEscapeCardBound",
+      "category": "completed",
+      "status": "completed",
+      "languages": [
+        "gdscript",
+        "csharp"
+      ],
+      "frameworks": [
+        "godot"
+      ],
+      "packageManager": "nuget",
+      "environment": "godot engine",
+      "gpu": "optional",
+      "git": true,
+      "documentation": "Completed/DungeonEscapeCardBound/README.md",
+      "commands": {},
+      "tags": [
+        "game",
+        "godot",
+        "csharp",
+        "portfolio"
+      ],
+      "instructions": "Completed/DungeonEscapeCardBound/AGENTS.md"
+    },
+    {
+      "id": "ref-goose",
+      "name": "Goose Autonomous Agent (Block)",
+      "path": "References/Goose",
+      "category": "references",
+      "status": "reference",
+      "languages": [
+        "rust",
+        "python",
+        "typescript"
+      ],
+      "frameworks": [
+        "tokio",
+        "react",
+        "pnpm"
+      ],
+      "packageManager": "cargo/pnpm/uv",
+      "environment": "none",
+      "gpu": "none",
+      "git": true,
+      "documentation": "References/Goose/README.md",
+      "commands": {},
+      "tags": [
+        "reference",
+        "agent",
+        "rust",
+        "goose"
+      ]
+    },
+    {
+      "id": "ref-openhands",
+      "name": "OpenHands (All-Hands-AI)",
+      "path": "References/OpenHands",
+      "category": "references",
+      "status": "reference",
+      "languages": [
+        "python",
+        "typescript"
+      ],
+      "frameworks": [
+        "fastapi",
+        "react",
+        "docker"
+      ],
+      "packageManager": "poetry/npm",
+      "environment": "none",
+      "gpu": "none",
+      "git": true,
+      "documentation": "References/OpenHands/README.md",
+      "commands": {},
+      "tags": [
+        "reference",
+        "agent",
+        "software-dev"
+      ]
+    },
+    {
+      "id": "ref-deepseek-harness",
+      "name": "DeepSeek Harness Benchmark",
+      "path": "References/DeepSeek-Harness",
+      "category": "references",
+      "status": "reference",
+      "languages": [
+        "typescript",
+        "python"
+      ],
+      "frameworks": [
+        "pnpm",
+        "uv"
+      ],
+      "packageManager": "pnpm/uv",
+      "environment": "none",
+      "gpu": "none",
+      "git": true,
+      "documentation": "References/DeepSeek-Harness/README.md",
+      "commands": {},
+      "tags": [
+        "reference",
+        "benchmarks",
+        "evaluation",
+        "deepseek"
+      ]
+    },
+    {
+      "id": "shared-ds-base",
+      "name": "Shared Data Science Environment (ds-base)",
+      "path": "Shared/envs/ds-base",
+      "category": "shared",
+      "status": "active",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "numpy",
+        "pandas",
+        "scipy",
+        "matplotlib",
+        "scikit-learn",
+        "jupyter"
+      ],
+      "packageManager": "pip",
+      "environment": "standalone python 3.10.11",
+      "gpu": "none",
+      "git": false,
+      "documentation": "Shared/README.md",
+      "commands": {
+        "ipython": {
+          "description": "Launch interactive IPython shell in ds-base",
+          "executable": "Scripts\\ipython.exe",
+          "args": [],
+          "cwd": "Shared/envs/ds-base",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify core data science library imports",
+          "executable": "Scripts\\python.exe",
+          "args": [
+            "-c",
+            "import numpy, pandas, sklearn, jupyter; print('ds-base ready')"
+          ],
+          "cwd": "Shared/envs/ds-base",
+          "risk": "safe"
+        }
+      },
+      "tags": [
+        "shared",
+        "exploratory",
+        "jupyter",
+        "classical-ml"
+      ]
+    },
+    {
+      "id": "crossmodallab",
+      "name": "CrossModalLab",
+      "path": "Active/CrossModalLab",
+      "category": "active",
+      "status": "active",
+      "languages": [
+        "python",
+        "typescript"
+      ],
+      "frameworks": [
+        "react",
+        "vite",
+        "python-stdlib"
+      ],
+      "packageManager": "npm",
+      "environment": "ordinary Python; optional ULVO for research",
+      "gpu": "none",
+      "git": true,
+      "documentation": "Active/CrossModalLab/dashboard/README.md",
+      "commands": {
+        "dashboard": {
+          "description": "Build when necessary and launch the read-only scientific dashboard on loopback",
+          "executable": "python",
+          "args": [
+            "-B",
+            "scripts/launch_dashboard.py"
+          ],
+          "cwd": "Active/CrossModalLab",
+          "risk": "safe"
+        }
+      },
+      "tags": [
+        "research",
+        "vision-language",
+        "dashboard"
+      ],
+      "instructions": "Active/CrossModalLab/AGENTS.md"
+    },
+    {
+      "id": "dl-exp3",
+      "name": "Deep Learning Exp 3: Transfer Learning / ResNet18",
+      "path": "Academic/sem5/DL/exp3",
+      "category": "academic",
+      "status": "active",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "torchvision",
+        "tkinter"
+      ],
+      "packageManager": "uv",
+      "environment": "ULVO-managed Python 3.11; pinned CUDA dependencies",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp3/README.md",
+      "instructions": "Academic/sem5/DL/exp3/AGENTS.md",
+      "commands": {
+        "dashboard": {
+          "description": "Dashboard Experiment 3 through the verified ULVO runtime",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp3",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp3",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify Experiment 3 through the verified ULVO runtime",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp3",
+            "--",
+            "python",
+            "verify.py",
+            "--integration",
+            "--gui"
+          ],
+          "cwd": "Academic/sem5/DL/exp3",
+          "risk": "safe"
+        },
+        "train": {
+          "description": "Train Experiment 3 through the verified ULVO runtime",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp3",
+            "--",
+            "python",
+            "main.py",
+            "train",
+            "--preset",
+            "FAST_TEST"
+          ],
+          "cwd": "Academic/sem5/DL/exp3",
+          "risk": "compute"
+        },
+        "evaluate": {
+          "description": "Evaluate Experiment 3 through the verified ULVO runtime",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp3",
+            "--",
+            "python",
+            "main.py",
+            "evaluate"
+          ],
+          "cwd": "Academic/sem5/DL/exp3",
+          "risk": "safe"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "sem5"
+      ]
+    },
+    {
+      "id": "dl-exp4",
+      "name": "Deep Learning Exp 4: RNN / LSTM Sentiment Analysis",
+      "path": "Academic/sem5/DL/exp4",
+      "category": "academic",
+      "status": "active",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "tkinter"
+      ],
+      "packageManager": "uv",
+      "environment": "ULVO-managed Python 3.11; pinned CUDA dependencies",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp4/README.md",
+      "instructions": "Academic/sem5/DL/exp4/AGENTS.md",
+      "commands": {
+        "dashboard": {
+          "description": "Dashboard Experiment 4 through the verified ULVO runtime",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp4",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp4",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify Experiment 4 through the verified ULVO runtime",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp4",
+            "--",
+            "python",
+            "verify.py",
+            "--integration",
+            "--gui"
+          ],
+          "cwd": "Academic/sem5/DL/exp4",
+          "risk": "safe"
+        },
+        "train": {
+          "description": "Train Experiment 4 through the verified ULVO runtime",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp4",
+            "--",
+            "python",
+            "main.py",
+            "train",
+            "--preset",
+            "FAST_TEST"
+          ],
+          "cwd": "Academic/sem5/DL/exp4",
+          "risk": "compute"
+        },
+        "evaluate": {
+          "description": "Evaluate Experiment 4 through the verified ULVO runtime",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp4",
+            "--",
+            "python",
+            "main.py",
+            "evaluate"
+          ],
+          "cwd": "Academic/sem5/DL/exp4",
+          "risk": "safe"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "sem5"
+      ]
+    },
+    {
+      "id": "dl-exp7",
+      "name": "Deep Learning Experiment 7 (Hand Movement & Gesture Recognition)",
+      "path": "Academic/sem5/DL/exp7",
+      "category": "academic",
+      "status": "completed",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "opencv",
+        "mediapipe",
+        "matplotlib",
+        "tkinter"
+      ],
+      "packageManager": "uv",
+      "environment": "ULVO managed (existing compatible runtime)",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp7/README.md",
+      "commands": {
+        "dashboard": {
+          "description": "Launch Interactive 6-Tab Hand Movement Recognition Workbench",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp7",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp7",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify environment, hand tracking, temporal gesture model, and evaluation metrics",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp7",
+            "--",
+            "python",
+            "-B",
+            "verify.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp7",
+          "risk": "safe"
+        },
+        "train": {
+          "description": "Train temporal GRU hand movement classifier on gesture dataset",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp7",
+            "--",
+            "python",
+            "main.py",
+            "--train",
+            "--epochs",
+            "15"
+          ],
+          "cwd": "Academic/sem5/DL/exp7",
+          "risk": "compute"
+        },
+        "demo": {
+          "description": "Run real-time webcam hand gesture inference or playback fallback",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp7",
+            "--",
+            "python",
+            "main.py",
+            "--demo"
+          ],
+          "cwd": "Academic/sem5/DL/exp7",
+          "risk": "safe"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "pytorch",
+        "opencv",
+        "mediapipe",
+        "hand-tracking",
+        "gesture-recognition",
+        "sem5"
+      ],
+      "instructions": "Academic/sem5/DL/exp7/AGENTS.md"
+    },
+    {
+      "id": "dl-exp10",
+      "name": "Deep Learning Experiment 10 (Medical Diagnostics Transfer Learning - VGG16 vs ResNet18)",
+      "path": "Academic/sem5/DL/exp10",
+      "category": "academic",
+      "status": "completed",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "torchvision",
+        "matplotlib",
+        "tkinter"
+      ],
+      "packageManager": "uv",
+      "environment": "ULVO managed (existing compatible runtime)",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp10/README.md",
+      "commands": {
+        "dashboard": {
+          "description": "Launch Interactive 6-Tab Medical Brain Tumor MRI Diagnostic Workbench",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp10",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp10",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify environment, MRI datasets, VGG16/ResNet18 models, and deduplication logic",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp10",
+            "--",
+            "python",
+            "-B",
+            "verify.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp10",
+          "risk": "safe"
+        },
+        "evaluate": {
+          "description": "Evaluate active brain tumor model on deduplicated test and validation benchmarks",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp10",
+            "--",
+            "python",
+            "main.py",
+            "evaluate"
+          ],
+          "cwd": "Academic/sem5/DL/exp10",
+          "risk": "safe"
+        },
+        "audit": {
+          "description": "Run cryptographic SHA-256 duplicate and data leakage audit on Sartaj dataset",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp10",
+            "--",
+            "python",
+            "main.py",
+            "audit"
+          ],
+          "cwd": "Academic/sem5/DL/exp10",
+          "risk": "safe"
+        },
+        "train": {
+          "description": "Train medical transfer learning model (ResNet18 or VGG16) on deduplicated dataset",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp10",
+            "--",
+            "python",
+            "main.py",
+            "train",
+            "--model",
+            "resnet18",
+            "--epochs",
+            "5"
+          ],
+          "cwd": "Academic/sem5/DL/exp10",
+          "risk": "compute"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "pytorch",
+        "torchvision",
+        "transfer-learning",
+        "medical-imaging",
+        "brain-tumor",
+        "sem5"
+      ],
+      "instructions": "Academic/sem5/DL/exp10/AGENTS.md"
+    },
+    {
+      "id": "dl-exp9",
+      "name": "Deep Learning Experiment 9 (Synthetic Dataset Generation with DCGAN)",
+      "path": "Academic/sem5/DL/exp9",
+      "category": "academic",
+      "status": "completed",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "torchvision",
+        "matplotlib",
+        "tkinter"
+      ],
+      "packageManager": "uv",
+      "environment": "ULVO managed (existing compatible runtime)",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp9/README.md",
+      "commands": {
+        "dashboard": {
+          "description": "Launch Interactive 5-Tab DCGAN Synthesizer Workbench",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp9",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp9",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify environment, dataset normalization, G/D architectures, and gradient flow",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp9",
+            "--",
+            "python",
+            "-B",
+            "verify.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp9",
+          "risk": "safe"
+        },
+        "generate": {
+          "description": "Generate synthetic digits grid from Gaussian noise prior",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp9",
+            "--",
+            "python",
+            "main.py",
+            "generate",
+            "--samples",
+            "25"
+          ],
+          "cwd": "Academic/sem5/DL/exp9",
+          "risk": "safe"
+        },
+        "summary": {
+          "description": "Display Generator and Discriminator architecture parameter summary",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp9",
+            "--",
+            "python",
+            "main.py",
+            "summary"
+          ],
+          "cwd": "Academic/sem5/DL/exp9",
+          "risk": "safe"
+        },
+        "train": {
+          "description": "Train DCGAN on MNIST dataset with minimax adversarial loss",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp9",
+            "--",
+            "python",
+            "main.py",
+            "train",
+            "--epochs",
+            "5"
+          ],
+          "cwd": "Academic/sem5/DL/exp9",
+          "risk": "compute"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "pytorch",
+        "torchvision",
+        "gan",
+        "dcgan",
+        "generative-ai",
+        "synthetic-data",
+        "sem5"
+      ],
+      "instructions": "Academic/sem5/DL/exp9/AGENTS.md"
+    },
+    {
+      "id": "dl-exp8",
+      "name": "Deep Learning Experiment 8 (Comparing Attention Mechanisms in Language Translation)",
+      "path": "Academic/sem5/DL/exp8",
+      "category": "academic",
+      "status": "completed",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "matplotlib",
+        "tkinter"
+      ],
+      "packageManager": "uv",
+      "environment": "ULVO managed (existing compatible runtime)",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp8/README.md",
+      "commands": {
+        "dashboard": {
+          "description": "Launch Interactive 5-Tab Attention Mechanism & Translation Heatmap Workbench",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp8",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp8",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify environment, parallel corpus, Bahdanau/Luong/ScaledDot attention, and gradients",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp8",
+            "--",
+            "python",
+            "-B",
+            "verify.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp8",
+          "risk": "safe"
+        },
+        "translate": {
+          "description": "Translate sample English sentence to French and inspect token alignment",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp8",
+            "--",
+            "python",
+            "main.py",
+            "translate",
+            "--sentence",
+            "we study neural networks"
+          ],
+          "cwd": "Academic/sem5/DL/exp8",
+          "risk": "safe"
+        },
+        "summary": {
+          "description": "Display comparative parameter breakdown across all 3 attention mechanisms",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp8",
+            "--",
+            "python",
+            "main.py",
+            "summary"
+          ],
+          "cwd": "Academic/sem5/DL/exp8",
+          "risk": "safe"
+        },
+        "train": {
+          "description": "Train Seq2Seq NMT model with selected attention mechanism on parallel corpus",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp8",
+            "--",
+            "python",
+            "main.py",
+            "train",
+            "--attention",
+            "bahdanau",
+            "--epochs",
+            "12"
+          ],
+          "cwd": "Academic/sem5/DL/exp8",
+          "risk": "compute"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "pytorch",
+        "attention",
+        "bahdanau",
+        "luong",
+        "scaled-dot-product",
+        "nlp",
+        "nmt",
+        "sem5"
+      ],
+      "instructions": "Academic/sem5/DL/exp8/AGENTS.md"
+    },
+    {
+      "id": "dl-exp6",
+      "name": "Deep Learning Experiment 6 (Automatic Image Captioning - CNN-LSTM)",
+      "path": "Academic/sem5/DL/exp6",
+      "category": "academic",
+      "status": "completed",
+      "languages": [
+        "python"
+      ],
+      "frameworks": [
+        "pytorch",
+        "torchvision",
+        "matplotlib",
+        "pillow",
+        "tkinter"
+      ],
+      "packageManager": "uv",
+      "environment": "ULVO managed (existing compatible runtime)",
+      "gpu": "optional",
+      "git": false,
+      "documentation": "Academic/sem5/DL/exp6/README.md",
+      "commands": {
+        "dashboard": {
+          "description": "Launch Interactive 5-Tab CNN-LSTM Image Captioning Workbench",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp6",
+            "--",
+            "python",
+            "dashboard.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp6",
+          "risk": "safe"
+        },
+        "verify": {
+          "description": "Verify environment, ResNet18 encoder, LSTM decoder, and captioning pipeline",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp6",
+            "--",
+            "python",
+            "-B",
+            "verify.py"
+          ],
+          "cwd": "Academic/sem5/DL/exp6",
+          "risk": "safe"
+        },
+        "caption": {
+          "description": "Generate natural language caption for sample image using CNN-LSTM",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp6",
+            "--",
+            "python",
+            "main.py",
+            "caption"
+          ],
+          "cwd": "Academic/sem5/DL/exp6",
+          "risk": "safe"
+        },
+        "summary": {
+          "description": "Display Encoder and Decoder architecture parameter summary",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp6",
+            "--",
+            "python",
+            "main.py",
+            "summary"
+          ],
+          "cwd": "Academic/sem5/DL/exp6",
+          "risk": "safe"
+        },
+        "train": {
+          "description": "Train CNN-LSTM multimodal model on image-caption paired dataset",
+          "executable": "ulvo",
+          "args": [
+            "run",
+            "--keep-env",
+            "E:/Workspace/Academic/sem5/DL/exp6",
+            "--",
+            "python",
+            "main.py",
+            "train",
+            "--epochs",
+            "12"
+          ],
+          "cwd": "Academic/sem5/DL/exp6",
+          "risk": "compute"
+        }
+      },
+      "tags": [
+        "academic",
+        "deep-learning",
+        "pytorch",
+        "torchvision",
+        "image-captioning",
+        "cnn-lstm",
+        "multimodal",
+        "computer-vision",
+        "nlp",
+        "sem5"
+      ],
+      "instructions": "Academic/sem5/DL/exp6/AGENTS.md"
+    }
+  ]
+}

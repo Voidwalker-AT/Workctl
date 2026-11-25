@@ -1,0 +1,332 @@
+[
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-WorkCtlComposedFrame"
+  },
+  {
+    "ExpectedType": "UiLine",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-WorkCtlHeaderLine"
+  },
+  {
+    "ExpectedType": "UiLine",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-WorkCtlSeparatorLine"
+  },
+  {
+    "ExpectedType": "UiLine",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-WorkCtlFooterLine"
+  },
+  {
+    "ExpectedType": "UiLine",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-WorkCtlFooter"
+  },
+  {
+    "ExpectedType": "UiLine",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-WorkCtlBar"
+  },
+  {
+    "ExpectedType": "UiLine",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-UiLine"
+  },
+  {
+    "ExpectedType": "UiSegment",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-UiSegment"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellHomeFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellWorkloadListFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellWorkloadDetailFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellToolsListFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellStorageFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellHardwareFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellServicesFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellProcessesFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellNetworkFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellDiagnosticsFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellSearchFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellHelpFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "guide.ps1",
+    "Contract": "FRAME",
+    "Name": "New-GuideFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "guide.ps1",
+    "Contract": "FRAME",
+    "Name": "New-GuideCatalogFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "guide.ps1",
+    "Contract": "FRAME",
+    "Name": "New-GuideTopicFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "guide.ps1",
+    "Contract": "FRAME",
+    "Name": "New-GuideSectionReaderFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "guide.ps1",
+    "Contract": "FRAME",
+    "Name": "New-GuideSearchFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellDevMenuFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellProjectsFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellProjectDetailFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellAgentsFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellCommandOutputFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "shell.ps1",
+    "Contract": "FRAME",
+    "Name": "New-ShellErrorFrame"
+  },
+  {
+    "ExpectedType": "UiLine[]",
+    "Module": "ui.ps1",
+    "Contract": "FRAME",
+    "Name": "New-WorkCtlConfirmDialogFrame"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "guide.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Handle-WorkCtlGuideKey"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "guide.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Step-GuideSelection"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "ui.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Write-UiLineAt"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "ui.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Write-WorkCtlDiffFrame"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "ui.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Start-WorkCtlUI"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "ui.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Stop-WorkCtlUI"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "ui.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Push-WorkCtlScreen"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "guide.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Set-WorkCtlGuideSectionCompleted"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "guide.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Save-WorkCtlGuideProgress"
+  },
+  {
+    "ExpectedType": "void",
+    "Module": "omencore.ps1",
+    "Contract": "NO OUTPUT",
+    "Name": "Assert-WorkCtlFanMutationAllowed"
+  },
+  {
+    "ExpectedType": "bool",
+    "Module": "ui.ps1",
+    "Contract": "SCALAR/QUERY",
+    "Name": "Pop-WorkCtlScreen"
+  },
+  {
+    "ExpectedType": "PSCustomObject",
+    "Module": "ui.ps1",
+    "Contract": "STRUCTURED RESULT",
+    "Name": "Get-WorkCtlCanvas"
+  },
+  {
+    "ExpectedType": "int",
+    "Module": "ui.ps1",
+    "Contract": "SCALAR/QUERY",
+    "Name": "Get-WorkCtlWindowWidth"
+  },
+  {
+    "ExpectedType": "int",
+    "Module": "ui.ps1",
+    "Contract": "SCALAR/QUERY",
+    "Name": "Get-WorkCtlWindowHeight"
+  },
+  {
+    "ExpectedType": "string",
+    "Module": "ui.ps1",
+    "Contract": "SCALAR/QUERY",
+    "Name": "Get-WorkCtlMargin"
+  },
+  {
+    "ExpectedType": "bool",
+    "Module": "ui.ps1",
+    "Contract": "SCALAR/QUERY",
+    "Name": "Test-UiLineEqual"
+  },
+  {
+    "ExpectedType": "ConsoleKeyInfo",
+    "Module": "ui.ps1",
+    "Contract": "SCALAR/QUERY",
+    "Name": "Read-WorkCtlKey"
+  },
+  {
+    "ExpectedType": "PSCustomObject",
+    "Module": "ui.ps1",
+    "Contract": "STRUCTURED RESULT",
+    "Name": "Get-WorkCtlViewport"
+  },
+  {
+    "ExpectedType": "PSCustomObject",
+    "Module": "guide.ps1",
+    "Contract": "STRUCTURED RESULT",
+    "Name": "Get-WorkCtlGuideProgress"
+  },
+  {
+    "ExpectedType": "PSCustomObject",
+    "Module": "guide.ps1",
+    "Contract": "STRUCTURED RESULT",
+    "Name": "Get-WorkCtlGuideCatalog"
+  },
+  {
+    "ExpectedType": "PSCustomObject",
+    "Module": "guide.ps1",
+    "Contract": "STRUCTURED RESULT",
+    "Name": "Initialize-WorkCtlGuideState"
+  },
+  {
+    "ExpectedType": "object[]",
+    "Module": "guide.ps1",
+    "Contract": "COLLECTION",
+    "Name": "Search-WorkCtlGuide"
+  },
+  {
+    "ExpectedType": "PSCustomObject",
+    "Module": "omencore.ps1",
+    "Contract": "STRUCTURED RESULT",
+    "Name": "Test-WorkCtlFanOwnershipAllowed"
+  }
+]

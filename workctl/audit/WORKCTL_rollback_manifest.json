@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-09-15T01:14:00+05:30",
+  "backupSnapshotPath": "E:\\TOOLS\\WorkstationControl\\backups\\pre_freebuff_state_fix_2026-09-14_23-05-22",
+  "restoreCommand": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Copy-Item -Path 'E:\\TOOLS\\WorkstationControl\\backups\\pre_freebuff_state_fix_2026-09-14_23-05-22\\*' -Destination 'E:\\TOOLS\\WorkstationControl' -Recurse -Force; Remove-Item -Path 'E:\\TOOLS\\WorkstationControl\\modules\\development.ps1' -Force -ErrorAction SilentlyContinue\"",
+  "files": [
+    {
+      "path": "modules\\shell.ps1",
+      "status": "MODIFIED",
+      "preChangeSHA256": "F5E776E0DF497365211DFBF3B62BDAC7E9FC62A4249D4F0CE0EB6CDE7A2F053C",
+      "postChangeSHA256": "DF3038186064A0AF921E7917F34456D6B711E0B4CB4FA27E6D642D605FB9D896",
+      "changes": "Implemented New-WorkCtlShellState schema contract (42 properties), Test-WorkCtlShellState validator, Confirm-WorkCtlShellState safe normalizer; wired Development subsystem, commands (dev, projects, agents, freebuff), keybindings, preview cards, and UI frames."
+    },
+    {
+      "path": "modules\\guide.ps1",
+      "status": "MODIFIED",
+      "preChangeSHA256": "DD00A55A80A22AA22EC6AE794F3E16436029138302DFE33B2D266C3AFDF4E3A8",
+      "postChangeSHA256": "8FBB125B8D196FB5D44ABD6446B85876A3A7B1E9B4C8185D39E7F7ACC9D77FEF",
+      "changes": "Added Topic 11 'development' (Development & AI Coding Agents) with 5 sections; implemented Get-GuideDynamicDevelopmentContent; fixed Get-GuideDynamicToolsContent path resolver; updated screen-to-topic mapping."
+    },
+    {
+      "path": "modules\\tools.ps1",
+      "status": "MODIFIED",
+      "preChangeSHA256": "92A0F4BAEE16A066CF2ABE5231FE0D996FF034690AABBEBE84CEE2335DEDB72B",
+      "postChangeSHA256": "03DFD2EC841AB0E384591372EAFB161C00446B6C7D7D232B288AED2493205D72",
+      "changes": "Added Invoke-WorkCtlInteractiveTool handoff primitive (differential rendering pause/resume, cursor toggle, synchronous child execution, UI state invalidation); added Start-WorkCtlInteractiveTool wrapper."
+    },
+    {
+      "path": "modules\\development.ps1",
+      "status": "CREATED",
+      "preChangeSHA256": null,
+      "postChangeSHA256": "700EEFEDDAD2634EC396FDB04FF72ADC5156D7FE3DF54767B38325E04CA9FBE1",
+      "changes": "New Development & AI Agents subsystem module: Get-WorkCtlProjects (with cache), Get-WorkCtlAiAgents, Get-WorkCtlRuntimes, Invoke-WorkCtlLaunchFreebuff."
+    },
+    {
+      "path": "config\\tools.json",
+      "status": "MODIFIED",
+      "preChangeSHA256": "9408F26C5C3E9DD6A8E3F0A9050EAB9F10596103BC91229E5EA80B2608D45B67",
+      "postChangeSHA256": "E03DE73F65699BBB1C56B622951D17BA72B7D085B0B3BC2807C6475A68D15646",
+      "changes": "Audited and expanded inventory: windirstat, fancontrol, qbittorrent, mounter, workctl, and freebuff with precise metadata, categories, paths, and processNames."
+    }
+  ],
+  "unmodifiedCoreFiles": [
+    {
+      "path": "workctl.ps1",
+      "sha256": "9FB8E8F527565A5746BAC0AA2DF60C0E7C6C03ABEEB7BDBCFCEE7384DE555A62"
+    },
+    {
+      "path": "modules\\ui.ps1",
+      "sha256": "E1DFEEE3FC23DDE25295C3DC2CF38F4E45E2B605448FA25B9CB23E166956324C"
+    },
+    {
+      "path": "modules\\workloads.ps1",
+      "sha256": "3EEE289ED493EB084A3368D4D6C4B806D71C9E4F68D0E3C0400A7C9BC6A6FCF6"
+    },
+    {
+      "path": "modules\\resources.ps1",
+      "sha256": "0E23EEB1776E300CC74DB9622F6D3AD0410BBABF22CEBF2952D7B1ED53645C55"
+    },
+    {
+      "path": "modules\\powertoys.ps1",
+      "sha256": "1E5855E74E15CDEDA194C5AD728EDC63B462D04F58FE9B3497BC9E2DD2A5877A"
+    },
+    {
+      "path": "modules\\media.ps1",
+      "sha256": "4F52FF7E92D48EE8CCE8F5DEF741508AFF6C7B212C3307CD40C9FCA094428C12"
+    },
+    {
+      "path": "config\\workloads.json",
+      "sha256": "92B56320F631CF68BD72F2A1654F8B101E92484EFF169BAA343D40870AE7B4C8"
+    }
+  ]
+}

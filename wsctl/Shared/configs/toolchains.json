@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": 1,
+  "description": "Workspace toolchains, runtimes, compilers, and cache standards",
+  "toolchains": [
+    {
+      "id": "git",
+      "name": "Git for Windows",
+      "command": "git",
+      "required": true,
+      "category": "core",
+      "minVersion": "2.40.0",
+      "verifiedVersion": "2.54.0.windows.1",
+      "consumers": ["all repositories"],
+      "recommendations": {
+        "coreLongpaths": "Run 'git config --global core.longpaths true' to avoid MAX_PATH failures on deep dependency trees."
+      }
+    },
+    {
+      "id": "pwsh",
+      "name": "PowerShell Core",
+      "command": "pwsh",
+      "required": true,
+      "category": "core",
+      "minVersion": "7.4.0",
+      "verifiedVersion": "7.6.5",
+      "consumers": ["workspace administration scripts", "automation"],
+      "recommendations": {}
+    },
+    {
+      "id": "python-default",
+      "name": "Python 3.13 (Default)",
+      "command": "python",
+      "required": true,
+      "category": "python",
+      "minVersion": "3.10.0",
+      "verifiedVersion": "3.13.0",
+      "consumers": ["Academic/sem5/DL/exp1", "Academic/sem2", "Academic/sem1"],
+      "recommendations": {}
+    },
+    {
+      "id": "python-launcher",
+      "name": "Python Launcher for Windows",
+      "command": "py",
+      "required": true,
+      "category": "python",
+      "verifiedVersions": ["3.10", "3.11", "3.12", "3.13"],
+      "consumers": ["multi-version virtual environment creation"],
+      "recommendations": {}
+    },
+    {
+      "id": "uv",
+      "name": "Astral UV Fast Python Package Installer",
+      "command": "uv",
+      "required": true,
+      "category": "python",
+      "minVersion": "0.4.0",
+      "verifiedVersion": "0.12.10",
+      "cacheLocation": "C:\\Users\\hp\\scoop\\persist\\uv\\cache",
+      "consumers": ["termux-ai-workstation", "Tools/whichllm", "future python projects"],
+      "recommendations": {
+        "cachePolicy": "Keep canonical uv cache on fast SSD C:\\Users\\hp\\scoop\\persist\\uv\\cache (9.03 GB active). Do not move."
+      }
+    },
+    {
+      "id": "node",
+      "name": "Node.js Runtime",
+      "command": "node",
+      "required": true,
+      "category": "javascript",
+      "minVersion": "20.0.0",
+      "verifiedVersion": "v24.15.0",
+      "manager": "nvm-windows",
+      "consumers": ["Active/SecurityWorkbench", "Tools/pdfcraft", "Tools/OmniRoute", "local_ai_workflow"],
+      "recommendations": {}
+    },
+    {
+      "id": "npm",
+      "name": "Node Package Manager (npm)",
+      "command": "npm",
+      "required": true,
+      "category": "javascript",
+      "minVersion": "10.0.0",
+      "verifiedVersion": "11.12.1",
+      "consumers": ["all first-party node projects (package-lock.json canonical)"],
+      "recommendations": {
+        "policy": "npm is the established workspace default for first-party repositories. Preserve package-lock.json."
+      }
+    },
+    {
+      "id": "pnpm",
+      "name": "Fast, Disk Space Efficient Package Manager (pnpm)",
+      "command": "pnpm",
+      "required": false,
+      "category": "javascript",
+      "verifiedVersion": "12.3.4",
+      "consumers": ["References/DeepSeek-Harness", "References/Goose/ui"],
+      "recommendations": {
+        "policy": "Available for projects explicitly created with pnpm. Do not migrate npm projects to pnpm."
+      }
+    },
+    {
+      "id": "gcc",
+      "name": "GCC C/C++ Compiler (MSYS2 UCRT64)",
+      "command": "gcc",
+      "required": true,
+      "category": "compiled",
+      "minVersion": "13.0.0",
+      "verifiedVersion": "14.2.0",
+      "consumers": ["Academic/sem2/dsa", "Active/Aegic_NFC", "RE-Learning", "leetcode"],
+      "recommendations": {}
+    },
+    {
+      "id": "cmake",
+      "name": "CMake Build System",
+      "command": "cmake",
+      "required": true,
+      "category": "compiled",
+      "minVersion": "3.25.0",
+      "verifiedVersion": "4.4.3",
+      "consumers": ["native C/C++ builds", "system extensions"],
+      "recommendations": {}
+    },
+    {
+      "id": "ninja",
+      "name": "Ninja Build System",
+      "command": "ninja",
+      "required": true,
+      "category": "compiled",
+      "minVersion": "1.10.0",
+      "verifiedVersion": "1.13.2",
+      "consumers": ["native compilation accelerator"],
+      "recommendations": {}
+    },
+    {
+      "id": "java",
+      "name": "Java Development Kit (Adoptium OpenJDK 21 LTS)",
+      "command": "java",
+      "required": true,
+      "category": "compiled",
+      "minVersion": "17.0.0",
+      "verifiedVersion": "21.0.4",
+      "javaHome": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.4.7-hotspot",
+      "consumers": ["academic coursework", "IntelliJ projects"],
+      "recommendations": {}
+    },
+    {
+      "id": "go",
+      "name": "Go Programming Language",
+      "command": "go",
+      "required": true,
+      "category": "compiled",
+      "minVersion": "1.22.0",
+      "verifiedVersion": "go1.26.5",
+      "gopath": "C:\\Users\\hp\\go",
+      "gomodcache": "C:\\Users\\hp\\go\\pkg\\mod",
+      "consumers": ["system automation", "utilities"],
+      "recommendations": {}
+    },
+    {
+      "id": "dotnet",
+      "name": ".NET SDK",
+      "command": "dotnet",
+      "required": true,
+      "category": "compiled",
+      "minVersion": "8.0.0",
+      "verifiedVersion": "8.0.319",
+      "consumers": ["Tools/OmenCore", "Completed/DungeonEscapeCardBound"],
+      "recommendations": {}
+    },
+    {
+      "id": "rust",
+      "name": "Rust Toolchain (rustc/cargo)",
+      "command": "rustc",
+      "required": false,
+      "status": "optional",
+      "category": "compiled",
+      "consumers": ["References/Goose (if compiling from source)", "Tools/pdfcraft (src-tauri)"],
+      "recommendations": {
+        "status": "Optional. Not currently required for daily development because Goose is a reference repository."
+      }
+    },
+    {
+      "id": "maven-gradle",
+      "name": "Maven / Gradle Build Automation",
+      "command": "mvn",
+      "required": false,
+      "status": "optional",
+      "category": "compiled",
+      "consumers": ["Java enterprise builds"],
+      "recommendations": {
+        "status": "Optional. Academic Java coursework runs with plain javac or embedded wrappers."
+      }
+    },
+    {
+      "id": "msvc-cl",
+      "name": "Microsoft Visual C++ (cl.exe)",
+      "command": "cl",
+      "required": false,
+      "status": "optional",
+      "category": "compiled",
+      "consumers": ["Windows native MSVC builds"],
+      "recommendations": {
+        "status": "Optional. MSYS2 GCC 14.2 serves as the primary C/C++ compiler across the workspace."
+      }
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama Local Model Runner",
+      "command": "ollama",
+      "required": true,
+      "category": "ai",
+      "verifiedVersion": "0.34.0",
+      "modelsDir": "E:\\AI_Models\\OLLAMA",
+      "consumers": ["local AI orchestration", "Tools/OmniRoute", "termux-ai-workstation"],
+      "recommendations": {
+        "envVar": "OLLAMA_MODELS is correctly configured to E:\\AI_Models\\OLLAMA (8.17 GB)."
+      }
+    },
+    {
+      "id": "nvidia-gpu",
+      "name": "NVIDIA GPU Driver & PyTorch CUDA Runtimes",
+      "command": "nvidia-smi",
+      "required": true,
+      "category": "gpu",
+      "hardware": "NVIDIA GeForce RTX 2050 (4 GB VRAM)",
+      "driverVersion": "596.49",
+      "driverCudaMax": "13.2",
+      "hostToolkitNvcc": "11.8",
+      "consumers": ["Academic/sem5/DL/exp1", "Academic/sem5/yolo", "termux-ai-workstation"],
+      "recommendations": {
+        "architecture": "Keep driver, toolkit, and bundled PyTorch runtimes decoupled. All active PyTorch environments bundle their own verified CUDA runtimes (cu121, cu124, cu130)."
+      }
+    }
+  ]
+}

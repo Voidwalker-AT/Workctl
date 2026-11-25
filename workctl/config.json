@@ -1,0 +1,75 @@
+﻿{
+  "version": 1,
+  "components": {
+    "mysql": {
+      "label": "MySQL 8",
+      "type": "service",
+      "service": "MySQL80",
+      "groups": ["dev", "database", "quiet"]
+    },
+    "docker": {
+      "label": "Docker Desktop",
+      "type": "app",
+      "groups": ["dev", "containers", "quiet"]
+    },
+    "ollama": {
+      "label": "Ollama",
+      "type": "app",
+      "groups": ["ai", "quiet"]
+    },
+    "openclaw": {
+      "label": "OpenClaw Gateway",
+      "type": "task",
+      "task": "OpenClaw Gateway",
+      "groups": ["ai", "agents", "quiet"]
+    },
+    "onedrive": {
+      "label": "Microsoft OneDrive",
+      "type": "app",
+      "groups": ["cloud", "quiet"]
+    },
+    "terabox": {
+      "label": "TeraBox",
+      "type": "app",
+      "groups": ["cloud", "quiet"]
+    },
+    "discord": {
+      "label": "Discord",
+      "type": "app",
+      "groups": ["quiet"]
+    },
+    "steam": {
+      "label": "Steam",
+      "type": "app",
+      "groups": ["gaming", "quiet"]
+    },
+    "teams": {
+      "label": "Microsoft Teams",
+      "type": "app",
+      "groups": ["quiet"]
+    },
+    "screenrec": {
+      "label": "ScreenRec",
+      "type": "app",
+      "groups": ["quiet"]
+    },
+    "dsa": {
+      "label": "Intel Driver & Support Assistant",
+      "type": "service-group",
+      "services": [
+        "DSAService",
+        "DSAUpdateService"
+      ],
+      "groups": ["maintenance", "quiet"]
+    }
+  },
+  "protected": [
+    "OmniRoute",
+    "Google Drive",
+    "Windows Defender",
+    "HP System Event Utility",
+    "NVIDIA Display Container",
+    "Realtek Audio",
+    "WSL"
+  ]
+}

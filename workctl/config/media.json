@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "description": "WorkCtl Media Subsystem Configuration - Configured roots, extensions, and cache policy",
+  "roots": [
+    {
+      "path": "E:\\TorlinkDownloads",
+      "label": "Torlink Downloads",
+      "category": "Downloads",
+      "enabled": true
+    },
+    {
+      "path": "E:\\Media",
+      "label": "Media Library",
+      "category": "Library",
+      "enabled": true
+    },
+    {
+      "path": "C:\\Users\\hp\\Videos",
+      "label": "User Videos & Captures",
+      "category": "Captures",
+      "enabled": true
+    }
+  ],
+  "supportedExtensions": [
+    ".mkv",
+    ".mp4",
+    ".avi",
+    ".mov",
+    ".webm",
+    ".m4v",
+    ".ts"
+  ],
+  "cache": {
+    "indexPath": "runtime\\media-index.json",
+    "cacheTtlSeconds": 300,
+    "maxFileScanDepth": 4
+  }
+}

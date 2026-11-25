@@ -1,0 +1,124 @@
+﻿{
+    "Date":  "2026-09-15T06:05:48.9579102Z",
+    "HostVersion":  "5.1.26100.9278",
+    "Screens":  {
+                    "shell-workloads-list":  {
+                                                 "Screen":  "shell-workloads-list",
+                                                 "FullFrameMedianMs":  28.932,
+                                                 "FullFrameP95Ms":  48.197,
+                                                 "FullFrameMinMs":  20.685,
+                                                 "FullFrameMaxMs":  67.898,
+                                                 "FastPathSupported":  true,
+                                                 "FastPathMedianMs":  0.281,
+                                                 "FastPathP95Ms":  0.917,
+                                                 "FastPathMinMs":  0.174,
+                                                 "FastPathMaxMs":  4.942
+                                             },
+                    "shell-processes":  {
+                                            "Screen":  "shell-processes",
+                                            "FullFrameMedianMs":  39.237,
+                                            "FullFrameP95Ms":  55.944,
+                                            "FullFrameMinMs":  21.982,
+                                            "FullFrameMaxMs":  72.549,
+                                            "FastPathSupported":  true,
+                                            "FastPathMedianMs":  0.251,
+                                            "FastPathP95Ms":  0.436,
+                                            "FastPathMinMs":  0.135,
+                                            "FastPathMaxMs":  2.059
+                                        },
+                    "shell-home":  {
+                                       "Screen":  "shell-home",
+                                       "FullFrameMedianMs":  23.638,
+                                       "FullFrameP95Ms":  66.177,
+                                       "FullFrameMinMs":  16.345,
+                                       "FullFrameMaxMs":  72.585,
+                                       "FastPathSupported":  true,
+                                       "FastPathMedianMs":  0.343,
+                                       "FastPathP95Ms":  1.173,
+                                       "FastPathMinMs":  0.146,
+                                       "FastPathMaxMs":  5.978
+                                   },
+                    "shell-storage":  {
+                                          "Screen":  "shell-storage",
+                                          "FullFrameMedianMs":  21.594,
+                                          "FullFrameP95Ms":  38.084,
+                                          "FullFrameMinMs":  14.935,
+                                          "FullFrameMaxMs":  44.625,
+                                          "FastPathSupported":  true,
+                                          "FastPathMedianMs":  0.166,
+                                          "FastPathP95Ms":  0.705,
+                                          "FastPathMinMs":  0.126,
+                                          "FastPathMaxMs":  1.845
+                                      },
+                    "shell-hardware":  {
+                                           "Screen":  "shell-hardware",
+                                           "FullFrameMedianMs":  17.294,
+                                           "FullFrameP95Ms":  26.54,
+                                           "FullFrameMinMs":  11.348,
+                                           "FullFrameMaxMs":  27.613,
+                                           "FastPathSupported":  false,
+                                           "FastPathMedianMs":  "-",
+                                           "FastPathP95Ms":  "-",
+                                           "FastPathMinMs":  "-",
+                                           "FastPathMaxMs":  "-"
+                                       },
+                    "shell-tools-list":  {
+                                             "Screen":  "shell-tools-list",
+                                             "FullFrameMedianMs":  23.324,
+                                             "FullFrameP95Ms":  36.645,
+                                             "FullFrameMinMs":  16.783,
+                                             "FullFrameMaxMs":  41.828,
+                                             "FastPathSupported":  true,
+                                             "FastPathMedianMs":  0.332,
+                                             "FastPathP95Ms":  0.799,
+                                             "FastPathMinMs":  0.203,
+                                             "FastPathMaxMs":  3.762
+                                         },
+                    "shell-services":  {
+                                           "Screen":  "shell-services",
+                                           "FullFrameMedianMs":  30.826,
+                                           "FullFrameP95Ms":  46.106,
+                                           "FullFrameMinMs":  20.229,
+                                           "FullFrameMaxMs":  72.52,
+                                           "FastPathSupported":  true,
+                                           "FastPathMedianMs":  0.291,
+                                           "FastPathP95Ms":  0.578,
+                                           "FastPathMinMs":  0.186,
+                                           "FastPathMaxMs":  4.81
+                                       },
+                    "shell-dev-menu":  {
+                                           "Screen":  "shell-dev-menu",
+                                           "FullFrameMedianMs":  17.909,
+                                           "FullFrameP95Ms":  34.688,
+                                           "FullFrameMinMs":  10.877,
+                                           "FullFrameMaxMs":  38.95,
+                                           "FastPathSupported":  true,
+                                           "FastPathMedianMs":  0.176,
+                                           "FastPathP95Ms":  0.886,
+                                           "FastPathMinMs":  0.127,
+                                           "FastPathMaxMs":  3.38
+                                       },
+                    "shell-guide":  {
+                                        "Screen":  "shell-guide",
+                                        "FullFrameMedianMs":  34.875,
+                                        "FullFrameP95Ms":  59.235,
+                                        "FullFrameMinMs":  22.675,
+                                        "FullFrameMaxMs":  104.678,
+                                        "FastPathSupported":  true,
+                                        "FastPathMedianMs":  0.269,
+                                        "FastPathP95Ms":  0.585,
+                                        "FastPathMinMs":  0.17,
+                                        "FastPathMaxMs":  2.623
+                                    }
+                },
+    "CpuProfile":  {
+                       "WallSeconds":  10.0103765,
+                       "TotalEvents":  641,
+                       "RenderPaints":  641,
+                       "FPS":  64,
+                       "CpuSeconds":  0.641,
+                       "NormalizedCpuPct":  0.53,
+                       "SingleCoreCpuPct":  6.4,
+                       "RamDeltaMB":  0
+                   }
+}

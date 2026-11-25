@@ -1,0 +1,220 @@
+﻿{
+    "schemaVersion":  1,
+    "components":  {
+                       "mysql":  {
+                                     "label":  "MySQL 8",
+                                     "type":  "service",
+                                     "service":  "MySQL80",
+                                     "mode":  "Manual",
+                                     "admin":  true,
+                                     "groups":  [
+                                                    "dev",
+                                                    "database",
+                                                    "quiet"
+                                                ],
+                                     "stopPolicy":  "safe"
+                                 },
+                       "docker":  {
+                                      "label":  "Docker Desktop",
+                                      "type":  "docker",
+                                      "startPath":  "C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe",
+                                      "mode":  "On-demand",
+                                      "admin":  false,
+                                      "groups":  [
+                                                     "dev",
+                                                     "containers",
+                                                     "quiet"
+                                                 ],
+                                      "stopPolicy":  "safe"
+                                  },
+                       "ollama":  {
+                                      "label":  "Ollama",
+                                      "type":  "ollama",
+                                      "startPath":  "E:\\OllamaApp\\ollama app.exe",
+                                      "processes":  [
+                                                        "ollama app",
+                                                        "ollama"
+                                                    ],
+                                      "mode":  "On-demand",
+                                      "admin":  false,
+                                      "groups":  [
+                                                     "ai",
+                                                     "local-ai",
+                                                     "quiet"
+                                                 ],
+                                      "stopPolicy":  "safe"
+                                  },
+                       "openclaw":  {
+                                        "label":  "OpenClaw Gateway",
+                                        "type":  "openclaw",
+                                        "mode":  "Autostart OFF",
+                                        "admin":  true,
+                                        "groups":  [
+                                                       "ai",
+                                                       "agents",
+                                                       "quiet"
+                                                   ],
+                                        "stopPolicy":  "safe"
+                                    },
+                       "omniroute":  {
+                                         "label":  "OmniRoute",
+                                         "type":  "omniroute",
+                                         "mode":  "On-demand",
+                                         "admin":  false,
+                                         "groups":  [
+                                                        "local-ai",
+                                                        "routing",
+                                                        "quiet"
+                                                    ],
+                                         "stopPolicy":  "safe"
+                                     },
+                       "onedrive":  {
+                                        "label":  "Microsoft OneDrive",
+                                        "type":  "app",
+                                        "startPath":  "C:\\Program Files\\Microsoft OneDrive\\OneDrive.exe",
+                                        "processes":  [
+                                                          "OneDrive",
+                                                          "OneDrive.Sync.Service"
+                                                      ],
+                                        "mode":  "On-demand",
+                                        "admin":  false,
+                                        "groups":  [
+                                                       "cloud",
+                                                       "quiet"
+                                                   ],
+                                        "stopPolicy":  "safe"
+                                    },
+                       "discord":  {
+                                       "label":  "Discord",
+                                       "type":  "app",
+                                       "startPath":  "C:\\Users\\hp\\AppData\\Local\\Discord\\Update.exe",
+                                       "processes":  [
+                                                         "Discord"
+                                                     ],
+                                       "mode":  "On-demand",
+                                       "admin":  false,
+                                       "groups":  [
+                                                      "social",
+                                                      "quiet"
+                                                  ],
+                                       "startArgs":  [
+                                                         "--processStart",
+                                                         "Discord.exe"
+                                                     ],
+                                       "stopPolicy":  "confirm"
+                                   },
+                       "steam":  {
+                                     "label":  "Steam",
+                                     "type":  "app",
+                                     "startPath":  "C:\\Program Files (x86)\\Steam\\steam.exe",
+                                     "processes":  [
+                                                       "steam",
+                                                       "steamwebhelper",
+                                                       "GameOverlayUI"
+                                                   ],
+                                     "mode":  "On-demand",
+                                     "admin":  false,
+                                     "groups":  [
+                                                    "gaming",
+                                                    "quiet"
+                                                ],
+                                     "stopPolicy":  "confirm"
+                                 },
+                       "screenrec":  {
+                                         "label":  "ScreenRec",
+                                         "type":  "app",
+                                         "startPath":  "C:\\Users\\hp\\AppData\\Local\\StreamingVideoProvider\\ScreenRec_app\\screenrec.exe",
+                                         "processes":  [
+                                                           "screenrec"
+                                                       ],
+                                         "mode":  "On-demand",
+                                         "admin":  false,
+                                         "groups":  [
+                                                        "capture",
+                                                        "quiet"
+                                                    ],
+                                         "stopPolicy":  "safe"
+                                     },
+                       "dsa":  {
+                                   "label":  "Intel Driver \u0026 Support Assistant",
+                                   "type":  "service-group",
+                                   "services":  [
+                                                    "DSAService",
+                                                    "DSAUpdateService"
+                                                ],
+                                   "mode":  "Manual",
+                                   "admin":  true,
+                                   "groups":  [
+                                                  "maintenance"
+                                              ],
+                                   "stopPolicy":  "safe"
+                               },
+                       "monect":  {
+                                      "label":  "Monect Remote",
+                                      "type":  "service",
+                                      "service":  "MonectServerService",
+                                      "mode":  "Manual",
+                                      "admin":  true,
+                                      "groups":  [
+                                                     "remote",
+                                                     "quiet"
+                                                 ],
+                                      "stopPolicy":  "safe"
+                                  },
+                       "torlink":  {
+                                       "label":  "Torlink",
+                                       "type":  "torlink",
+                                       "workingDirectory":  "E:\\Workspace\\Tools\\torlink",
+                                       "startCommand":  "npm start",
+                                       "processMatch":  "dist/index.js",
+                                       "mode":  "On-demand",
+                                       "admin":  false,
+                                       "groups":  [
+                                                      "download",
+                                                      "p2p"
+                                                  ],
+                                       "stopPolicy":  "confirm"
+                                   },
+                       "antigravity":  {
+                                           "label":  "Antigravity",
+                                           "type":  "antigravity",
+                                           "startPath":  "C:\\Users\\hp\\AppData\\Local\\Programs\\Antigravity\\Antigravity.exe",
+                                           "installRoot":  "C:\\Users\\hp\\AppData\\Local\\Programs\\Antigravity",
+                                           "processes":  [
+                                                             "Antigravity",
+                                                             "language_server"
+                                                         ],
+                                           "mode":  "On-demand",
+                                           "admin":  false,
+                                           "groups":  [
+                                                          "apps",
+                                                          "coding",
+                                                          "ide"
+                                                      ],
+                                           "stopPolicy":  "explicit"
+                                       },
+                       "powertoys":  {
+                                         "label":  "Microsoft PowerToys",
+                                         "type":  "powertoys-host",
+                                         "startPath":  "C:\\Users\\hp\\AppData\\Local\\PowerToys\\PowerToys.exe",
+                                         "processes":  [
+                                                           "PowerToys"
+                                                       ],
+                                         "mode":  "On-demand",
+                                         "admin":  false,
+                                         "groups":  [
+                                                        "utilities",
+                                                        "powertoys"
+                                                    ],
+                                         "stopPolicy":  "explicit"
+                                     }
+                   },
+    "protected":  [
+                      "Google Drive",
+                      "Windows Defender",
+                      "NVIDIA Display Container",
+                      "Realtek Audio",
+                      "HP System Event Utility",
+                      "WSL"
+                  ]
+}
